@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .tooltiptext {
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 1;
+        }
+        
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+    </style>
+</head>
+
+<body style="text-align:center;">
+
+    <h2>Tooltip</h2>
+    <p>Move the mouse over the text below:</p>
+
+    <p class="tooltip" data-tooltip="Tooltip text">Hover over me</p>
+    <p class="tooltip" data-tooltip="Услышь мой рёв!">Девиз дома Ланнистеров</p>
+
+    <!--
+Напишите скрипт, который при наведении на div
+с классом tooltip создает внутр него
+всплывающую подсказку - span с классом tooltiptext.
+Пример его работы можно посмотреть
+здесь https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_tooltip
+-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(".tooltip").hover(function() {
+            // const tooltipText = $(this).attr("data-tooltip");
+            const tooltipText = $(this).data("tooltip");
+            $(this).append(`<span class="tooltiptext">${tooltipText}</span>`);
+        }, function() {
+            $(this).find(".tooltiptext").remove();
+        });
+        /*
+        $('.tooltip').on('mouseover', function() {
+            // const tooltipText = $(this).attr("data-tooltip");
+            const tooltipText = $(this).data("tooltip");
+            $(this).append(`<span class="tooltiptext">${tooltipText}</span>`);
+        });
+        $('.tooltip').on('mouseout', function() {
+            $(this).find(".tooltiptext").remove();
+        });*/
+    </script>
+
+</body>
+
+</html>

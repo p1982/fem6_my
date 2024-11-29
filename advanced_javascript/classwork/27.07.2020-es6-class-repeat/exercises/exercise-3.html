@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./component.js"></script>
+    <script>
+        /*
+  Также напишите класс Form, который будет создавать HTML-форму, 
+  и у которого будут такие параметры:
+    - id;
+    - классы;
+    - action;
+    
+    А также четыре метода:
+    - render - который создает каркас формы и возвращает его;
+    - handleSumbit - который отвечает за обработку отправки формы;
+    - serialize, который все заполненые поля формы собирает 
+    в строку формата: "nameПоля=значениеПоля";
+    - serializeJSON, который все заполненные поля формы собирает в объект, ключами которого будут значения name        
+        */
+
+        class Form extends Component {
+
+            handleSubmit = (e) => {
+                e.preventDefault();
+                const {subserializeJSONmitType, action, funcSubmit} = this.props;
+                const body = (submitType === 'urlencoded') ? this.serialize : this.
+                funcSubmit(action, body); 
+            }
+
+            render() {
+                const {funcSubmit, submitType, ...attr} = this.props
+                const form = this.createElement('form', attr)
+                form.addEventListener('submit', this.handleSubmit)
+                this.form = form
+            }
+
+            serialize() {
+                const fields = [...this.form.querySelectorAll('input[name], select[name], textarea[name]')]
+                const body = fields.map((item) => `${item.name}=${item.value}`).join('&')
+                return body
+            }
+
+            serializeJSON() {
+                const fields = [...this.form.querySelectorAll('input[name], select[name], textarea[name]')];
+                const body = fields.map(({name, value}) => ({[name]: value}))
+                return JSON.stringify(body)
+            }
+
+
+        }
+
+        const formProps = {
+            id: 'form',
+            className: '',
+            action: '',
+            submitType: 'urlencoded',
+            async funcSubmit(url, body) {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body
+                })
+            }
+        }
+
+        const formProto = new Form(formProps)
+    </script>
+</body>
+</html>

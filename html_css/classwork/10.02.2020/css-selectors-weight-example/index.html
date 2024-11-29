@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .red-text.main-text {
+            color: green;
+        }
+        
+        .red-text {
+            color: red;
+        }
+        
+        #yellow-text {
+            color: yellow;
+        }
+        
+        #green-text {
+            color: green;
+        }
+        
+        .darkgreen {
+            color: darkgreen !important;
+        }
+        
+        p {
+            color: darkgray;
+        } 
+        
+        #main-text.red-text {
+            color: red;
+        }
+        
+        .main-menu {
+            width: 600px;
+            margin: 0 auto;
+        }
+        
+        ul.main-menu {
+            width: 700px;
+        }
+        
+        .w-800.main-menu {
+            width: 800px;
+        }    
+        
+        .main-menu li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+        
+        .main-menu a {
+            color: red;
+            text-decoration: none;
+        }
+        
+        .main-menu li a {
+            color: #000;
+        }
+        
+        .main-menu .main-menu-link {
+            color: #000;
+        }
+        
+        .main-menu li {
+            border: none !important;
+        }
+        
+        .main-menu-link.active {
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 1px solid #000;
+        }
+
+    </style>
+</head>
+<body>
+  
+  <a href="" class="main-menu-link">Ссылка вне меню</a>
+   
+   <ul class="main-menu w-800">
+       <li style="border: 1px solid #000"><a href="" class="main-menu-link active">Item 1</a></li>
+       <li style="border: 1px solid #000"><a href="" class="main-menu-link">Item 2</a></li>
+       <li style="border: 1px solid #000"><a href="" class="main-menu-link">Item 3</a></li>
+       <li style="border: 1px solid #000"><a href="" class="main-menu-link">Item 4</a></li>
+       <li style="border: 1px solid #000"><a href="" class="main-menu-link">Item 5</a></li>
+   </ul>
+   
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum facilis culpa consequatur alias earum tempore pariatur vitae, molestias voluptatibus blanditiis sequi, saepe nostrum voluptatem impedit obcaecati. Totam cupiditate excepturi culpa!</p>
+    <p class="red-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, obcaecati. Sit, minima quaerat harum deleniti cum velit! Odio nam, illum molestias quam. Repellendus iure possimus, eveniet cupiditate maxime deserunt autem?</p>
+    <p class="red-text main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, obcaecati. Sit, minima quaerat harum deleniti cum velit! Odio nam, illum molestias quam. Repellendus iure possimus, eveniet cupiditate maxime deserunt autem?</p>   
+    
+    <p id="main-text" class="red-text main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, magni, quasi culpa eius officia ullam, perferendis mollitia debitis odio maiores in. Ratione dicta nobis hic inventore, sequi debitis quis dolorem.</p>         
+       
+    <p id="yellow-text" class="red-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, magni, quasi culpa eius officia ullam, perferendis mollitia debitis odio maiores in. Ratione dicta nobis hic inventore, sequi debitis quis dolorem.</p>
+    
+    <p style="color: blue" id="green-text" class="red-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, veritatis animi natus unde! Sunt odio commodi officiis veniam, itaque accusantium sapiente expedita, error non alias dolorum optio maiores, facilis architecto.</p>
+    <p class="darkgreen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste cumque quo ut repellat et eaque at, qui distinctio, impedit facilis. Doloremque tenetur itaque quis, non fuga nostrum nemo iure ullam.</p>
+  <script>
+      const menuLinks = document.querySelectorAll(".main-menu-link");
+      menuLinks.forEach(item => item.addEventListener("click", function (e) {
+          e.preventDefault();
+          const allLinks = this.closest(".main-menu").querySelectorAll("a");
+          allLinks.forEach(item => item.classList.remove("active"));
+          this.classList.add("active");
+      }));
+  </script>
+</body>
+</html>

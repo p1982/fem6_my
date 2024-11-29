@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid red;
+            border-radius: 5px;
+            color: red;
+            cursor: pointer;
+        }
+
+        .btn.active {
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // const button1 = document.createElement("a");
+        // button1.className = "btn";
+        // button1.textContent = "Нажми меня";
+        // button1.addEventListener("click", function(){
+        //     this.classList.toggle("active");
+        // })
+        const button1 = new Button("btn", "Click me", "Show me");
+        document.body.append(button1.render());
+
+        function Button(className, primaryText, secondaryText) {
+            this.className = className;
+            this.primaryText = primaryText;
+            this.secondaryText = secondaryText;
+            this.elem = null;
+            this.render = function() {
+               const button = document.createElement("a");
+               button.className = this.className;
+               button.textContent = this.primaryText;
+               button.addEventListener("click", this.handleClick.bind(this));
+               this.elem = button;
+               return button;
+            };
+            this.handleClick = function(e) {
+                e.preventDefault();
+                this.elem.classList.toggle("active");
+                const {elem, primaryText, secondaryText} = this;
+                elem.textContent = (elem.textContent === primaryText) ? secondaryText : primaryText;
+            }
+        }
+    </script>
+</body>
+</html>

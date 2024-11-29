@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="accordion" id="accordion-list">
+        </div>
+    </div>
+    <script src="component.js"></script>
+    <script>
+        class FAQItem extends Component {
+
+            status = false;
+            
+            content = `<button aria-expanded="false">
+                            <span class="accordion-title">${this.props.question}</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>${this.props.answer}</p>
+                        </div>`;
+        
+            handleClick = () => {
+                this.status = !this.status;
+                this.elemButton.setAttribute('aria-expanded', `${this.status}`);             
+            };        
+            
+            render(){
+                const element = this.createElement("div", {className: "accordion-item"}, this.content);
+                const button = element.querySelector("button");
+                button.addEventListener("click", this.handleClick);
+                this.elemButton = button;
+                this.element = element;
+                return element;
+            }
+        }
+        
+        const faqList = document.getElementById("accordion-list");
+        
+        const faqItemPros = {
+            question: "Why is the moon sometimes out during the day?",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
+        };
+                const faqItem = new FAQItem(faqItemPros);
+
+        faqList.append(faqItem.render())
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+        .items, .container {
+            float: left;
+            width: 350px;
+            height: 500px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+            margin-right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Drag and Drop Example</p>
+
+    <div class="items" id="start-elements">
+        <img class = "drag-item" src="https://static-s.aa-cdn.net/img/ios/1055278268/6ef837cc5b206e997831c8b853b806d3?v=1" draggable="true" >
+        <a href="" class="btn drag-item" draggable="true">Drag me!</a>
+        <span class="btn drag-item" draggable="true" >Drag span!</span>
+    </div>   
+   
+    <div id="container" class="container">
+        <h2>Собери их всех!</h2>
+    </div>
+    <br>
+
+    <script>
+
+        /*
+        Напишите код, который делает возможным перемещение содержимого колонки
+        с id="start-elements" в колонку с id="container" и обратно.
+        Код должен быть максимально универсальным, без привязки к id
+        */
+        const store = {
+            dragElement : null
+        };
+
+
+        function allowDrop(e) {
+            e.preventDefault();
+        }
+
+        function drag(e) {
+            store.dragElement = this;
+        }
+
+        function drop(e) {
+            e.preventDefault()
+            const {dragElement} = store;
+            e.target.append(dragElement);
+            store.dragElement = null;
+        }
+
+        const dragableItems = [...document.getElementsByClassName('drag-item')];
+
+        dragableItems.forEach((item)=> item.addEventListener("dragstart", drag));
+       
+        const dragContainer = document.getElementById("start-elements");
+        const dropContainer = document.getElementById('container');
+
+        dropContainer.addEventListener('dragover', allowDrop);
+        dragContainer.addEventListener('dragover', allowDrop);
+
+        dropContainer.addEventListener('drop', drop);
+        dragContainer.addEventListener('drop', drop);
+
+    </script>
+</body>
+
+</html>

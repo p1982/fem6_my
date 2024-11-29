@@ -1,0 +1,27 @@
+.products-list {
+    @include flex;
+    justify-content: center;
+    font-family: $font-family;
+
+    &-item {
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid;
+        flex: 0 0 20%;
+        margin: 20px;
+        text-align: center;
+    }
+
+    &-img {
+        margin-bottom: 15px;
+        @include img-fluid;
+    }
+
+    &-name {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    Спросите у пользователя номер паспорта. 
+    После чего проверьте, правильно ли он его ввел 
+    Правильный номер паспорта это: две больших буквы в начале и 6 цифр после
+    */
+   const userPassport = prompt("Введите номер паспорта");
+
+   const pasportReg = /^[A-Z]{2}[0-9]{6}$/;
+   
+   console.log(pasportReg.test(userPassport));
+
+    </script>
+</body>
+</html>

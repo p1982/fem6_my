@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Список самых востребованных методов массивов, которые нужно знать</h2>
+    const str = "gvyunjm ijijm inmikm"
+    const arr = str.split(" ").join(" ")
+const arr=[1,2,3,4]
+const arr1=arr
+console.log(arr===arr1) //true
+const arr2= [...arr]
+console.log(arr===arr2) //false
+const arr3= [{name: "a"},{name: "b"},{name: "c"},{name: "v"},{name: "k"},{name: "l"},{name: "o"},{name: "p"}]
+    <ul>
+        <li>push()</li>
+        <li>pop()</li>
+        <li>shift()</li>
+        <li>unshift()</li>
+        <li>indexOf(a)</li>
+        <li>includes()</li>
+        <li>find()</li>
+        <li>findIndex((el,index,array)=>el.name==="a")</li>
+        <li>slice(5,6)</li>
+        <li>splice(5,1,)</li>
+        <li>forEach()</li>
+        <li>filter()</li>
+        <li>map()</li>
+        <li>split(" ") - это метод не массива, а строки, но он создает массив</li>
+        <li>join()</li>
+        <li>reduce()</li>
+    </ul>
+    Дополнительно:
+    <ul>
+        <li>Object.keys(objName) - возвращает массив ключей объекта (массив, содержищий имена всех свойств объекта)</li>
+        <li>Object.values(objName) - возвращает массив значенй свойств объекта (массив, содержищий все значения всех свойств объекта)</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="accordion">
+            <div class="accordion-item">
+                <button aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAccordion() {
+            const itemToggle = this.getAttribute('aria-expanded');
+            const result = !(itemToggle === "false");
+            this.setAttribute('aria-expanded', `${!result}`);
+        }
+
+        const items = document.querySelectorAll(".accordion button");
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+    </script>
+</body>
+
+</html>

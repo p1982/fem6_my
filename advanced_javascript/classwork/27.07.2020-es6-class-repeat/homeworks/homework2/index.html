@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class SiteAdmin {
+
+            static roleList = {
+                admin: {
+                    allow: ["/pages", "/users", "/posts"],
+                },
+                manager: {
+                    allow: ["/pages", "/posts"],
+                },
+                rewriter: {
+                    allow: ["/posts"]
+                }
+            };
+
+            constructor(role, email, password) {
+                try {
+                    if(!role) {
+                        throw new SiteAdminException("Нужно указать роль!");
+                    }
+
+                    const roleList = Object.values(SiteAdmin.roleList);
+                    const result = SiteAdmin.roleList.find(item => item === role);
+                    if(!result) {
+                        throw new SiteAdminException("Такой роли не существует!");
+                    } 
+                    
+                    if(!email.includes("@")) {
+                        throw new SiteAdminException("В email должна быть @!");
+                    }
+
+                    this._role = role;
+                    this._email = email;
+                    this._password = password;
+                    this._posts = [];
+                }
+                catch(err) {
+                    throw err;
+                }
+            }
+
+            get posts() {
+                return this._posts;
+            }
+
+            get post(index) {
+                return this._posts[index];
+            }
+
+            set post(post) {
+                if(typeof post === "string") {
+                return this._posts.push(post);           
+                }
+                else {
+                    throw new SiteAdminException("Пост должен быть строкой!");
+                }
+            }
+
+            get postsCount() {
+                return this._posts.length;
+            }
+        }
+       
+
+        class SiteAdminException extends Error(message) {
+            constructor(message = "Сообщение по умолчанию") {
+                super(message);
+            }
+        }
+        
+        const newAdmin = new SiteAdmin(SiteAdmin.roleList.admin, "bogdan@gmail.com", "2235dfFanni");
+        const secondAdmin = new SiteAdmin(); // "Нужно указать роль!"
+    </script>
+</body>
+</html>

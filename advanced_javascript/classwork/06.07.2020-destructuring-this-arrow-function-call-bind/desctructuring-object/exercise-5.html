@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+        Скопируйте массив объектов books в новый массив newBooks, 
+        при этом скопировав вложенные объекты не по ссылке, а по значению
+        */
+const books = [
+        {
+            author: "Дарья Донцова",
+            name: "Дед Снегур и Морозочка",
+            article: "4342D",
+            price: 70
+        },
+        {
+            author: "Скотт Бэккер",
+            name: "Тьма, что приходит прежде",
+            article: "4421F",
+            price: 70           
+        },
+        {
+             author: "Дарья Донцова",
+            name: "Детектив на диете",
+            article: "4642D",
+            price: 70           
+        },
+        {
+            author: "Скотт Бэккер",
+            name: "Тысячекратная мысль",
+            article: "2344F",
+            price: 70           
+        }        
+    ];
+
+    const newBooks = books.map(book => ({...book}));
+    /*
+    const newBooks = books.map(book => {
+        const newBook = {};
+        for(const [key, value] of Object.entries(book)) {
+            newBook[key] = value;
+        }
+        return newBook;
+    });
+    */
+    books[0].price = 1000;
+    
+    console.log(books[0]);
+    console.log(newBooks[0]);
+    
+
+    </script>
+</body>
+</html>

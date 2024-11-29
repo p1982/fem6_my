@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <script>
+        const grandlord = {
+            name: "Тайвин",
+            lastName: "Ланнистер",
+            status: "глава дома Ланнистеров",
+            castle: "Утёс Кастерли"
+        };
+        
+        /* Деструктуризация объектов - это тоже упрощенный синтаксис присваивания.
+        Если имя переменной совпадает с именем свойства объекта,
+        то можно создать эти переменные так (порядок свойств в объекте не имеет значения)
+        */
+        const {lastName, name} = grandlord;
+        console.log(name);
+        console.log(lastName);        
+        /*
+        Это эквивалетно записи
+        const name = grandlord.name;
+        const lastName = grandlord.lastName;
+        */
+        
+        /*
+        Если имя переменной не совпадает с именем свойства объекта, 
+        то в фигурных скобочках вы пишете так: имяСвойстваОбъекта: имяПеременной
+        */
+        const {name: userName, lastName: userLastName} = grandlord;
+        console.log(userName);
+        console.log(userLastName);
+        /*
+        Это эквивалетно записи
+        const userName = grandlord.name;
+        const userLastName = grandlord.lastName;
+        */   
+
+        /*
+        Также вы можете использовать значения по умолчанию для создаваемых переменных,
+        если не уверены, что в объекте есть такое свойство:
+        */  
+
+        const user = {
+            status: "Десница Короля",
+            family: "Старк",
+            friend: "Роберт Баратеон",
+            weapon: "Лёд"
+        };
+
+        const {family: userFamily, wife = "не женат"} = user;
+        console.log(wife);
+        /*
+        вы также можете сохранять значения в уже объявленные переменные,
+         если они были объявлены не через const, 
+         но тогда должны все выражение заключать в круглые скобки 
+         (потому что иначе JavaScript будет воспринимать круглые скобки как 
+         создание объекта).
+         */
+        
+        let friend = "";
+        let weapon = "";
+
+        ({friend, weapon} = user);
+        console.log(friend, weapon);
+        
+        /*
+        кроме того, вы можете сохранять значения в свойства другого объекта 
+        с помощью деструктуризации, так же заключая процесс деструктуризации
+        в круглые скобки
+        */
+        const king = {};
+        ({friend: king.name} = user);
+        console.log(king);
+       
+        
+    </script>
+</body>
+
+</html>

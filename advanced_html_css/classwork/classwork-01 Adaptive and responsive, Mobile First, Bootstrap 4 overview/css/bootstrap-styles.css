@@ -1,0 +1,19 @@
+.company {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-transform: uppercase;
+}
+
+.nav-top-link {
+    text-transform: uppercase;
+}
+
+.article-item {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+}
+
+.article-item > .h4 {
+
+}

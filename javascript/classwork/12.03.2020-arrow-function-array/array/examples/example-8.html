@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // метод map возвращает новый массив, в который попадают все элементы старого массива, преобразованные определнным способом. Например: массив зарплат в грн превращаяетя в массив зарплат в долларах       
+        const sallariesGrn = [12000, 8000, 5600, 25000, 30000];
+        const sallaryDollar = sallariesGrn.map(function(item) {
+            return item/37;
+        });
+        const sallaryEuro = sallariesGrn.map(item => item/40);
+        console.log(sallaryDollar);
+        const sorted = sallariesGrn.sort((a,b) => {
+            return b-a
+        })
+        console.log(1, sorted)
+        const sortes = sallariesGrn.sort() //[12000, 25000, 30000, 5600, 8000]
+        const reduced = sallariesGrn.reduce((acc, cur, index, array)=>{
+            acc+=cur
+            return acc
+        })
+        const obj = sallariesGrn.reduce((acc, cur, index, array)=>{
+            acc[index] = cur
+            return acc
+        },{})
+
+    </script>
+</body>
+</html>

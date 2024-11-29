@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function SiteAdmin(role, email, password) {
+            try {
+                if(!role) {
+                    throw new SiteAdminException("Нужно указать роль!");
+                }
+
+                var flag = false;
+                for(key in SiteAdmin.roleList) {
+                    if(SiteAdmin.roleList[key] === role) {
+                        flag = true;
+                        break;
+                    }
+                }
+                if(!flag) {
+                    throw new SiteAdminException("Такой роли не существует!");
+                } 
+                
+                if(!email.includes("@")) {
+                    throw new SiteAdminException("В email должна быть @!");
+                }
+
+                this._role = role;
+                this._email = email;
+                this._password = password;
+                this._posts = [];
+            }
+            catch(err) {
+                throw err;
+            }
+        }
+
+        SiteAdmin.roleList = {
+            admin: {
+                allow: ["/pages", "/users", "/posts"],
+            },
+            manager: {
+                allow: ["/pages", "/posts"],
+            },
+            rewriter: {
+                allow: ["/posts"]
+            }
+        };
+
+        SiteAdmin.prototype.getPosts = function() {
+            return this._posts;
+        };
+
+        SiteAdmin.prototype.addPost = function(post) {
+            if(typeof post === "string") {
+                return this._posts.push(post);           
+            }
+            else {
+                throw new SiteAdminException("Пост должен быть строкой!");
+            }
+        };  
+        
+        SiteAdmin.prototype.calcPostsCount = function() {
+            return this._posts.length;
+        }        
+
+        function SiteAdminException(message) {
+            this.name = 'SiteAdminException';
+            this.message = message || 'Сообщение по умолчанию';
+            this.stack = (new Error()).stack;
+        }
+        SiteAdminException.prototype = Object.create(Error.prototype);
+        SiteAdminException.prototype.constructor = SiteAdminException;     
+        
+        const newAdmin = new SiteAdmin(SiteAdmin.roleList.admin, "bogdan@gmail.com", "2235dfFanni");
+        const secondAdmin = new SiteAdmin(); // "Нужно указать роль!"
+    </script>
+</body>
+</html>

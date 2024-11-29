@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .btn {
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            color: darkblue;
+            border-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+   <div id="root"></div>
+    <script type="module">
+        import ReverseButton from "./js/components/Buttons/ReverseButton.js";
+        // const Btn = obj.default;
+        const rootElement = document.getElementById("root");
+
+        const buttonProps = {
+            className: "btn-primary",
+            tag: "a",
+            text: "Start",
+            secondaryText: "Stop"
+        };
+        
+        const switchButton = new ReverseButton(buttonProps);
+        rootElement.append(switchButton.render());
+
+    </script>
+</body>
+</html>

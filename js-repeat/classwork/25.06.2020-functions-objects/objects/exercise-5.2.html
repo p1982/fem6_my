@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .card{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 0 20px;
+        }
+        .close{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: red;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .card__title{
+            font-size: 26px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .card__subtitle{
+            font-size: 18px;
+            
+        }
+        
+        .card-list {
+            display: flex;
+        }
+    </style>    
+</head>
+<body>
+    <div class="card-list" id="card-list">
+
+    </div>
+    <!-- <div class="card">
+        <span class = "close"> X </span> 
+        <h3 class="card__title">Lenovo X120S</h3>
+        <h4 class="card__subtitle">X120S (233-544-2)</h4>
+        <p class="card__price">18600</p>
+    </div> -->
+    <script>
+    class Card {
+        constructor(product) {
+            this._product = Object.assign({}, product);
+        }
+
+        render() {
+            const {name, fullName, price} = this._product;
+           this.elem = document.createElement('div');
+           this.elem.className = ('card');
+           this.elem.insertAdjacentHTML('beforeend', `<h3 class="card__title">${name}</h3>
+          <span class = "close"> X </span> 
+          <h4 class="card__subtitle">${fullName}</h4>
+          <p class="card__price">${price}</p>`);
+
+            const close = this.elem.querySelector('.close');
+            close.addEventListener('click', this.delete.bind(this));       
+
+            return this.elem;
+        }
+
+        delete() {
+            this.elem.remove();
+        }
+    }
+        const product = {
+           name: "Lenovo X120S",
+           fullName: "X120S (233-544-2)",
+           price: 18600,
+           shortDescr: "",
+           fullDesr: ""
+       };
+       const product2 = {
+           name: "Lenovo X120S",
+           fullName: "X120S (233-544-2)",
+           price: 18600,
+           shortDescr: "",
+           fullDesr: ""
+       };
+       
+       const lenovoProduct = new Card(product);
+       const lenovoProduct2 = new Card(product2);
+       const cardList = document.getElementById("card-list");
+       render(cardList, lenovoProduct, lenovoProduct2);
+
+      function render(container, ...elems) {
+        const DOMElements = elems.map(item => item.render());
+        container.append(...DOMElements);
+      }
+       
+    </script>
+</body>
+</html>

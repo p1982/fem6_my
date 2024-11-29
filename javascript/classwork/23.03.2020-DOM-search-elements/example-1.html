@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    console.log(document);
+    document.body.style.backgroundColor = "red";
+    const mainText = document.getElementById("main-text");
+    console.log(mainText);
+</script>
+<p id="main-text" class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quia provident eaque recusandae ipsa quam ducimus ullam placeat commodi quos praesentium, fugit mollitia voluptatem nostrum architecto dolorum perferendis. Vel, modi?</p>
+<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quia provident eaque recusandae ipsa quam ducimus ullam placeat commodi quos praesentium, fugit mollitia voluptatem nostrum architecto dolorum perferendis. Vel, modi?</p>
+<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quia provident eaque recusandae ipsa quam ducimus ullam placeat commodi quos praesentium, fugit mollitia voluptatem nostrum architecto dolorum perferendis. Vel, modi?</p>
+<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quia provident eaque recusandae ipsa quam ducimus ullam placeat commodi quos praesentium, fugit mollitia voluptatem nostrum architecto dolorum perferendis. Vel, modi?</p>
+<script>
+    // const mainText2 = document.getElementById("main-text");
+    // document.getElementsByClassName("text")
+    // const mainText2 = document.querySelector("p",)
+    const mainText2 = document.querySelectorAll(".text")
+    const mainText3 = document.getElementsByClassName("text")
+    
+    console.log(mainText2);
+    console.log(mainText3)
+</script>
+</body>
+</html>

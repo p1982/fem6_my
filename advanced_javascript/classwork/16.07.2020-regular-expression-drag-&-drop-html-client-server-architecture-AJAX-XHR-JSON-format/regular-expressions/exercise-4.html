@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    Напишите класс Input, который создает объект, описывающий однострочное поле ввода. У объекта будут такие свойства:
+    - тип поля ввода;
+    - классы;
+    - id;
+    - name;
+    - placeholder;
+    -  регулярное выражение для проверки введенных в поле ввода символов;
+    - текст ошибки;
+    
+    
+    И методы:
+    - render, возвращающий DOM-элемент;
+    - handleBlur - срабатывает, когда пользователь убирает курс из поля ввода;
+    - isValid, который проверяет, соответствуют ли введенные пользователем в поле ввода символы переданному регулярному выражению, и если нет - выводят текст об ошибке под полем ввода;
+    */
+   class Input{
+        constructor(props){
+            this.props = {...props};
+        }
+
+        handleFocus = () => {
+            if(this.error) {
+                this.error.remove();
+            }
+        }
+
+        handleBlur = ()=> {
+            const {value} = this.elem;
+            const {regexp, errorText} = this.props;
+            if(!regexp.test(value)) {
+                const error = document.createElement("p");
+                error.style.color = "red";
+                error.textContent = errorText;
+                this.error = error;
+                this.elem.after(error);
+            }
+        }
+
+        render() {
+            const {type = "text", className = "", id = "", name = "", placeholder = ""} = this.props;
+            const input = document.createElement("input");
+            input.type = type;
+            input.className = className;
+            input.id = id;
+            input.name = name;
+            input.placeholder = placeholder;
+            input.addEventListener("focus", this.handleFocus);
+            input.addEventListener("blur", this.handleBlur);
+            this.elem = input;
+            return input;
+        }
+    }
+        
+    const inputPassportProps = {
+        type: 'text', 
+        className: 'form-control', 
+        id: "user-passport", 
+        name: 'user-passport', 
+        placeholder: 'Enter passport', 
+        regexp: /^[A-Z]{2}[0-9]{6}$/,
+        errorText: 'Формат паспорта: EH531442!'
+    };
+
+   const inputPassport = new Input(inputPassportProps);
+     document.body.append(inputPassport.render())
+
+
+
+    </script>
+</body>
+</html>

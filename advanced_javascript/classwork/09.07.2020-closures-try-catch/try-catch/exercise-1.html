@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Спросите у пользователя список любимых актеров через запятую. 
+        Выведите его на страница внутри div с id="root" в виде списка.
+         Все возможные проблемы оберните в try ... catch чтобы скрипт не упал -->
+
+    <div id="root"></div>
+
+    <script>
+
+        const actors = prompt("Введите имена троих любимых актеров через запятую");
+        const root = document.getElementById('root');
+        // while(actors) {
+            try {
+                const listActors = actors.split(', ');
+                if (listActors[0] === "" && listActors.length === 1) {
+                    throw new Error('Ничего не ввели')
+                }
+                if (!isNaN(listActors[0])) {
+                    throw new Error('Ввели цифры')
+                }
+
+                const listActorsItems = listActors.map(elem => `<li>${elem}</li>`).join("");
+            
+                root.insertAdjacentHTML("afterbegin", `<ul>${listActorsItems}</ul>`);
+            }
+        catch(err){
+            if(err.name === "Error") {
+                    alert(err.message);
+                }
+                else {
+                    console.log(err.name);
+                    alert(`Сервис временно недоступен, заходите пожалуйста попозже`);
+                }
+            }
+        // }
+        
+
+
+
+
+    </script>
+</body>
+</html>

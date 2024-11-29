@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .error-text {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script src="component.js"></script>
+    <script>
+    /*
+    Напишите универсальный класс Input, который будет создавать однострочное поле ввода. У него будут такие параметры:
+    - тип (text, email, password, number, date, submit и т.д.);
+    - name;
+    - обязательное поле или нет;
+    - id;
+    - классы;
+    - placeholder;
+    - errorText - выводит текст ошибки, если поле обязательно к заполнению и не было заполненно;
+    
+    А также такие методы как:
+    - render - возвращает HTML-разметку поля ввода;
+    - handleBlur - срабатывает, если поле обязательно к заполнению и не было заполнено.
+    
+    */
+
+        class Input extends Component {
+            handleFocus = ()=> {
+                if(this.error){
+                    this.error.remove();
+                }
+            };
+
+            handleBlur = () => {
+                if(!this.elem.value){
+                    const error = this.createElement("p", {className: "error-text"}, this.props.errorText);
+                    this.elem.after(error);
+                    this.error = error;
+                }
+            };
+
+            render() {
+                const {errorText, ...attr} = this.props;
+                const input = this.createElement("input", attr);
+                
+                if(attr.required) {
+                    input.addEventListener("focus", this.handleFocus);
+                    input.addEventListener("blur", this.handleBlur);
+                }
+                
+                this.elem = input;
+                return input;
+            }
+        }
+
+        const loginInputProps = {
+            type: "text", 
+            className: "form-control", 
+            id: "", 
+            name: "user-login", 
+            placeholder: "Введите Логин", 
+            required: true, 
+            errorText: "Логин не может быть пустым!"            
+        };
+
+        const loginInput = new Input(loginInputProps);
+        document.body.prepend(loginInput.render())
+
+    </script>
+</body>
+</html>

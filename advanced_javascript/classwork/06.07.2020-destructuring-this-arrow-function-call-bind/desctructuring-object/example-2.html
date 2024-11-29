@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        вы также можете использовать оператор ... - rest, для того, 
+        чтобы собрать все свойства объекта, 
+        которым не хватило  отдельных переменных, в новый объект
+        */
+        const grandlord = {
+            name: "Тайвин",
+            lastName: "Ланнистер",
+            status: "глава дома Ланнистеров",
+            castle: "Утёс Кастерли"
+        };
+
+        const {name, lastName, ...info} = grandlord;
+        console.log(info);
+       
+      
+    </script>
+</body>
+</html>

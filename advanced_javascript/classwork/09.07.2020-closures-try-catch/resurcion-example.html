@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Мама</li>
+        <li>Папа</li>
+        <li>Дети:
+            <ul>
+                <li>Маша</li>
+                <li>Вася</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+
+        const createList = function funcCreateList(arr) {   
+            const ul = document.createElement("ul");
+            const list = arr.map(item => {
+                if(typeof item === "string"){
+                    const li = document.createElement("li");
+                    li.textContent = item;
+                } else if(typeof item === "object" && item !== null){
+                    const li = document.createElement("li");
+                    li.textContent = item.name;                    
+                    const list = funcCreateList(item.list);
+                    li.append(list)
+                }
+            });
+            ul.append(...list);
+            return ul;
+        }
+
+        const family = ["Папа", "Мама", {
+            name: "Дети",
+            list: ["Маша", "Вася"]
+        }];
+
+
+    </script>
+</body>
+</html>

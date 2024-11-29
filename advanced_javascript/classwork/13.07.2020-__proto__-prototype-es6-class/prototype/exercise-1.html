@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    Создайте 3 объекта: productPhone, productNotebook, productWashingMachine, с такими свойствами:
+    - название;
+    - полное название;
+    - артикул товара;
+    - цена;
+    - цена доставки;
+    
+    и вынесите повторяющиеся методы в общий один общий объект.
+    */
+
+
+        const product = {
+            get price() {
+                return this._price;
+            },
+            set price(value) {
+                if ( Number.isInteger(value) && value > 0){
+                    this._price = value;
+                }
+                else {
+                    throw new Error("Цена должна быть целым положительным числом");
+                }
+            },
+            getDeliveryPrice() {
+                const basicDeliveryPrice = 0.01 * this._price;
+                const deliveryPrice = (basicDeliveryPrice > 50) ? basicDeliveryPrice : 50;
+                return deliveryPrice;
+            }
+        };
+
+        const productPhone = {
+            name : "",
+            fullName : "",
+            article : "",
+            _price: 0,
+            __proto__: product
+        };
+        console.log(productPhone.getDeliveryPrice())        
+
+        const productNotebook = {
+            name : "",
+            fullName : "",
+            article : "",
+            _price: 0,
+        };
+        productNotebook.__proto__ =  product;
+
+        const productWashingMachine = {
+            name : "",
+            fullName : "",
+            article : "",
+            _price: 0,
+        };
+        productWashingMachine.__proto__ = product;
+    
+    </script>
+</body>
+</html>

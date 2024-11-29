@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .text-field.focus {
+            border: 1px solid red;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <input class="text-field" type="text" id="user-name" placeholder="Введите имя пользователя">
+    <script>
+        const userNameField = document.getElementById("user-name");
+        userNameField.addEventListener("focus", function () {
+            this.classList.add("focus");
+        });
+        
+        userNameField.addEventListener("blur", function () {
+            this.classList.remove("focus");
+        })
+
+        userNameField.addEventListener("keypress", function (e) {
+            console.log(e.keyCode);
+            console.log(this.value);
+        });
+
+
+        // userNameField.addEventListener("keyup", function () {
+        //     console.log(this.value);
+        // });
+ 
+
+        // userNameField.addEventListener("keydown", function () {
+        //     console.log(this.value);
+        // });        
+
+    </script>
+</body>
+</html>

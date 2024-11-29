@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        метод forEach перебирает массив обрабатывая каждый элемент через переданную в аргумент callback функцию, сохраняя в первый аргумент фукции каждый элемент массива
+        */
+        const englishBreakfeast = ["яйца", "бекон", "сосиски", "жареные помидоры", "фасоль", "булочка с джемом", "кофе"];
+
+        englishBreakfeast.forEach(function(food, index, array) {
+            console.log(`${index} - ${food}`);
+        });
+
+        function showInConsole(elem) {
+            console.log(elem);
+        };
+        
+        englishBreakfeast.forEach(showInConsole);
+
+        //        englishBreakfeast.forEach((food, index,array) => console.log(food));
+        /*
+        const func = function(food) {
+            console.log(food);
+        };
+        for(let i = 0; i < englishBreakfeast.length; i++) {
+            const food = englishBreakfeast[i];
+            func(food);
+        }
+        delete func;
+        */
+
+        //        const sallariesGrn = [12000, 8000, 5600, 25000, 30000];
+        //        sallariesGrn.forEach(function(item) {
+        //            if(item > 10000) {
+        //                console.log(item);
+        //            }
+        //        });        
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

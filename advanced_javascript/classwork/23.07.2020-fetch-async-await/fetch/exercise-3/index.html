@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form action="" id="add-product">
+                <div class="form-group">
+                    <label for="email">Название товара</label>
+                    <input type="text" name="product-name" class="form-control" placeholder="Enter product name" >
+                </div>
+                <div class="form-group">
+                    <label for="email">Код товара</label>
+                    <input type="text" name="product-code" class="form-control" placeholder="Enter product code" >
+                </div>                
+                <div class="form-group">
+                    <label for="pwd">Цена товара</label>
+                    <input type="text" name="product-price" class="form-control" placeholder="Enter password" id="pwd">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4" id="card-list">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        /*
+    Напишите код, который работает так: 
+    1. Пользователь заполняет форму добавления товара, и нажав Submit - отправляет AJAX-запрос типа POST 
+    по адресу: "http://danit.com.ua/products" с формате urlencode, указан в качестве Authorization заголовка строку 
+    вида "Bearer token", где token  - строка, сохраненная в Locastorage в предыдущей задаче.
+
+    2. Если все поля заполнены, вам придет ответ о том, что товар добавлен, вида:
+    {
+        "status": "Success",
+        "result": {
+            "product-name": "name",
+            "product-code": "34ffff",
+            "product-price": "120",
+            "id": 1
+        }
+    }
+    Вы должны вывести его внутри div с id="card-list" на экран с помощью такой разметки:
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Vans Sk8-Hi MTE Shoes</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Style: VA33TXRJ5</h6>
+            <p class="card-text">
+                The Vans All-Weather MTE Collection features footwear and apparel designed to withstand the elements whilst still looking cool. </p>
+            <div class="buy d-flex justify-content-between align-items-center">
+                <div class="price text-success">
+                    <h5 class="mt-4">$125</h5>
+                </div>
+                <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+            </div>
+        </div>
+    </div>    
+    3. Если нет -  ответ вида:
+    {
+        "status": "Error",
+        "message": "One or more field are empty"
+    }
+    4. Если вы неправильо отправили токен, то получите ответ вида:
+    {
+        "status": "Error",
+        "message": "You are not authorized"
+    }
+    */
+//    1. получить сылку на форму 
+    //   2. повесить обработчик события на форму
+    //   3. отменть стандартное поведение формы
+    //   4. получить данные с полей ввода формы и свормировать urlencode string для отпровки формы
+    //   5.отправить пост запрос на указаный адрес
+    //   6. Обработаь ошибку если ответ не ок генерирууем ошибку
+    //   7. Если поле ответа статус = Succes обработать полученные данные
+    //   7.
+
+    const token = localStorage.getItem('token');
+
+    const formAddProduct = document.getElementById('add-product');
+    formAddProduct.addEventListener("submit", function(e){
+        e.preventDefault();
+        
+        const productName = this.querySelector('[name="product-name"]').value;
+        const productCode = this.querySelector('[name="product-code"]').value;
+        const productPrice = this.querySelector('[name="product-price"]').value;
+
+        const body = `product-name=${productName}&product-code=${productCode}&product-price=${productPrice}`;
+
+        const request = fetch('http://danit.com.ua/products', {
+            method: 'POST',
+            headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Authorization': `Bearer ${token}`
+                },  
+                body
+        });
+
+        request.then(response => {
+            if(!response.ok) {
+                throw new Error("Страница не найдена");
+            }
+            return response.json();
+        }).then(({status, result}) => {
+            if(status === "Success") {
+                const cardsList = document.getElementById('card-list');
+                const {["product-name"]: name, ["product-price"]: price, ["product-code"]: code} = result;
+                const card = createCard({name, price, code});
+                cardsList.insertAdjacentHTML("beforeend", card);
+            }
+        }).
+        catch(error => {
+            console.log(error);
+        }); 
+    })
+    
+
+    function createCard(card){
+        const {name, price, code} = card;
+        const result = `<div class="card">
+            <div class="card-body">
+            <h4 class="card-title">${name}</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Style: ${code}</h6>
+            <p class="card-text">
+                The Vans All-Weather MTE Collection features footwear and apparel designed to withstand the elements whilst still looking cool. </p>
+                <div class="buy d-flex justify-content-between align-items-center">
+                    <div class="price text-success">
+                        <h5 class="mt-4">${price}</h5>
+                    </div>
+                    <a href="#" class="btn btn-danger mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+             </div>
+        </div>`;
+        return result;
+    }
+
+
+
+    
+ 
+    </script>
+</body>
+
+</html>

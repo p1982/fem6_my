@@ -1,0 +1,20 @@
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.clearfix {
+    clear: both;
+}
+.text-center {
+    text-align: center;
+}
+.recent-post {
+    float: left ;
+    padding-right: 42px;
+    margin-bottom: 60px;
+
+}
+.recent-post-img {
+    float: left;
+    margin-right: 16px;
+}

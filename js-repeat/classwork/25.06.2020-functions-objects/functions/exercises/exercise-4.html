@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .btn {
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn" id="btn-increase" style="width: 120px; height: 30px">Увеличь меня</button>
+    <script>
+    /*
+    Напишите функцию increaseSize и привяжите ее в качестве обработчика "click" для кнопки с id="btn-increase".
+    Функция должна увеличивать DOM-элемент на 10% от предыдущего размера при клике.
+    Если нужно - создайте больше одной функции, соблюдая правило "функция делает только одно осмысленное действие".
+    */
+   const btn = document.getElementById('btn-increase')
+   btn.addEventListener('click', increaseSize)
+   function increaseSize(){
+       const newWidth = parsInt(this.style.width) * 1.1 
+       const newHeight = parsInt(this.style.height) * 1.1  
+       this.style.width = `${newWidth}px`
+       this.style.height = `${newHeight}px`
+   }
+
+    </script>
+</body>
+</html>

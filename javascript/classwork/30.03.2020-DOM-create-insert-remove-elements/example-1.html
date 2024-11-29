@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Примеры красивого оформления цитат на сайте</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Примеры красивого оформления цитат на сайте" />
+    <meta name="author" content="HTML5BOOK" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="single.css" />
+    <style>
+        body {
+            margin: 0;
+            background: url(https://html5book.ru/wp-content/uploads/2015/07/background46.png);
+        }
+
+        .top {
+            padding: 10px 0;
+            background: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            box-shadow: 1px 0 3px rgba(0, 0, 0, .3);
+        }
+
+        a {
+            text-decoration: none;
+            outline: none;
+        }
+
+        .top a {
+            font-size: 13px;
+            text-transform: uppercase;
+            font-family: Cambria, Georgia, serif;
+            letter-spacing: 1px;
+            color: #333;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 0 20px;
+            max-width: 660px;
+            margin: 40px auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Poiret One', cursive;
+            color: #524f4e;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, .7);
+            font-weight: normal;
+        }
+
+        h1 span {
+            font-weight: bold;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 0 4px 8px 0;
+            padding: 0 6px;
+            color: #aaa;
+            line-height: 20px;
+            font-size: 13px;
+            text-shadow: 1px 1px 1px white;
+            border: 1px solid white;
+            background: #ffffff;
+            background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(47%, #f6f6f6), color-stop(100%, #ededed));
+            background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+            background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+            background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+            transition: .2s ease-in-out;
+        }
+
+        .current-demo,
+        nav a:hover {
+            background: #E1E1D4;
+            border-color: #d9d9d9;
+            box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            background: #F0F0F1;
+            color: #333334;
+            padding: 20px 30px;
+            position: relative;
+            border-left: 35px solid #DFDEDE;
+            font-family: 'Lato', sans-serif;
+        }
+
+        blockquote:before {
+            content: "\201C";
+            font-family: serif;
+            position: absolute;
+            left: -29px;
+            top: 5px;
+            color: #BCBCBC;
+            font-size: 50px;
+            text-shadow: 1px 2px 0 white;
+        }
+
+        blockquote p {
+            margin: 0 0 16px;
+            font-size: 20px;
+            letter-spacing: .05em;
+            line-height: 1.4;
+        }
+        .list-item{
+            color: yellow;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section id="quotes">
+            <blockquote>
+                <p>I invented my life by taking for granted that everything I did not like would have an opposite, which I would like.</p>
+            </blockquote>
+        </section>
+    </div>
+
+    <script>
+const elem = document.querySelector("#quotes") 
+        // создаем тег blockquote - внутри которого будет наша цитата. Он пока находится в памяти браузера, а не на странице
+        const firstQuote = document.createElement("blockquote");
+
+        // // Выведем тег в консоль - видите, тег есть, Но на странице его пока нет
+        // // console.log(firstQuote);
+
+        // // создаем тег p - внутри которого будет текст. Он пока находится в памяти браузера, а не на странице
+        const firstQuoteP = document.createElement("p");
+
+        // // console.log(firstQuoteP);
+        
+        // // вставляем текст внутрь созданного нами тега p. У каждого тега есть свойство textContent - это текстовое содержимое нашего тега
+        firstQuoteP.textContent = "На Темную сторону Силы любовь к БДСМ приводит.";
+
+        // // Выведем тег в консоль - видите, тег есть, Но на странице его пока нет
+        console.log(firstQuoteP);
+
+        // // Вставляем внутрь созданного нами тега blockquote созданный нами тег p, внутрь которого мы положили текст
+        // // метод append вставляет тег в конец списка дочерних элементов тега, у которого он вызван, в данном случае - blockquote
+        firstQuote.append(firstQuoteP);
+        
+        // // console.log(firstQuote);
+        
+        // // Теперь у нас в памяти браузера есть 2 тега - blockquote и p, но их по прежнему нет на странице.
+
+        // // Вставляем внутрь нашего списка цитат созданную нами цитату, состояющую из двух тегов
+        // // метод append вставляет тег в конец списка дочерних элементов тега, у которого он вызван, в данном случае - section с id quotes        
+        // quotesList.append(firstQuote);
+        
+
+        // // создаем тег blockquote - внутри которого будет наша цитата. Он пока находится в памяти браузера, а не на странице
+        // const secondQuote = document.createElement("blockquote");
+
+        // // создаем тег p - внутри которого  текст. Он пока находится в памяти браузера, а не на странице
+        // const secondQuoteP = document.createElement("p");
+
+        // // вставляем текст внутрь созданного нами тега p. У каждого тега есть свойство textContent - это текстовое содержимое нашего тега
+        // secondQuoteP.textContent = "Идите нафиг! Л. Джеймс, автор '50 оттенков серого'";
+
+        // // Вставляем внутрь созданного нами тега blockquote созданный нами тег p, внутрь которого мы текст
+        // // метод prepend вставляет тег в начало списка дочерних элементов тега, у которого он вызван, в данном случае - blockquote
+        // secondQuote.prepend(secondQuoteP);
+        // // Теперь у нас в памяти браузера есть 2 тега - blockquote и p, но их по прежнему нет на странице.
+
+        // // Вставляем внутрь нашего списка цитат созданную нами цитату, состояющую из двух тегов
+        // // метод prepend вставляет тег в начало списка дочерних элементов тега, у которого он вызван, в данном случае - section с id quotes        
+        // // quotesList.prepend(secondQuote); 
+          
+        
+        const list = [1, 2, 3, 4, 5]
+        const newArr=list.map((item, index)=>{
+            return `<li id=${index} class="list-item">${item}</li>`
+        })
+        console.log(newArr.join(""));
+        elem.insertAdjacentHTML("beforeend", `<ul id="list">${list.map((item, index)=>{
+            return `<li id=${index} class="list-item">${item}</li>`
+        }).join("")}</ul>`);
+        
+        // quotesList.insertAdjacentHTML("beforeend", "<blockquote><p>Четвертая цитата</p></blockquote>");
+        // quotesList.insertAdjacentHTML("afterbegin", "<blockquote><p>Пятая цитата</p></blockquote>");
+        // quotesList.insertAdjacentHTML("beforebegin", "<blockquote><p>6 цитата</p></blockquote>");
+        // quotesList.insertAdjacentHTML("afterend", "<blockquote><p>7 цитата</p></blockquote>");
+    </script>
+
+</body>
+
+</html>

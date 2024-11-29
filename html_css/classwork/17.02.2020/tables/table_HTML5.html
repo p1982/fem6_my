@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .shoping-table {
+            font-family: "Roboto", sans-serif;
+            border-collapse: collapse;
+        }
+
+        .shoping-table-name {
+            padding: 10px 15px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .shoping-table-name::before {
+            content: "-";
+            position: relative;
+            right: 5px;
+        }
+
+        .shoping-table-name::after {
+            content: "-";
+            position: relative;
+            left: 5px;
+        }
+
+        .shoping-table-col-name {
+            padding: 10px 15px;
+            font-size: 18px;
+        }
+
+        .shoping-table-col-value {
+            padding: 5px 10px;
+            text-align: center;
+        }
+
+        .shoping-table-col-result {
+            padding: 10px 15px;
+            text-align: left;s
+        }
+
+        @font-face
+
+    </style>
+</head>
+<body>
+    <!--  -->
+    <table border="1" class="shoping-table">
+       <caption class="shoping-table-name">Совершенные покупки</caption>
+        <thead>
+            <tr>
+                <th class="shoping-table-col-name">Номер <sup>.99</sup></th>
+                <th class="shoping-table-col-name">Имя продукта</th>
+                <th class="shoping-table-col-name">Цена</th>
+                <th class="shoping-table-col-name">Количество</th>
+            </tr>
+        </thead>
+        <!-- Тег tfoot должен быть расположен перед тегом tbody -->
+        <tfoot>
+            <tr>
+                <th colspan="3" class="shoping-table-col-result">
+                    Всего:
+                </th>
+                <td>
+                    364.04
+                </td>
+            </tr>
+        </tfoot>        
+        <tbody>
+            <tr>
+                <td class="shoping-table-col-value">1.</td>
+                <td class="shoping-table-col-value">Лимон</td>
+                <td class="shoping-table-col-value">45.5</td>
+                <td class="shoping-table-col-value">3</td>
+            </tr>
+            <tr>
+                <td class="shoping-table-col-value">2.</td>
+                <td class="shoping-table-col-value">Апельсин</td>
+                <td class="shoping-table-col-value">32,8</td>
+                <td class="shoping-table-col-value">2</td>
+            </tr>
+            <tr>
+                <td class="shoping-table-col-value">3.</td>
+                <td class="shoping-table-col-value">Банан</td>
+                <td class="shoping-table-col-value">24,99</td>
+                <td class="shoping-table-col-value">6</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

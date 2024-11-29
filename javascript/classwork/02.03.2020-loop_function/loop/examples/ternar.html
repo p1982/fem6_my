@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let catName = prompt("Как зовут вашего кота?");
+        // if(isNaN(catName)) {
+        //     catName += "ус";
+        // }
+        // (isNaN(catName)) ? catName += "ус" : "";
+        catName += (isNaN(catName)) ? "ус" : "";
+
+        const catWeight = +prompt("Сколько весит ваш котик?");
+        (catWeight < 8) ? console.log(`Почему ${catName} так мало ест?`) : "";
+
+
+        (false) ? console.log(true):console.log(false);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="welcome"></div>
+    <script>
+        // localStorage.clear();
+        const container = document.getElementById("welcome");
+
+        let userName = localStorage.getItem("userName");
+        if (userName) {
+            container.textContent = `Добро пожаловать, ${userName}`;
+        } else {
+            userName = prompt("Введите свое имя");
+            localStorage.setItem("userName", userName);
+            container.textContent = `Добро пожаловать, ${userName}`;
+        }
+
+    </script>
+</body>
+
+</html>

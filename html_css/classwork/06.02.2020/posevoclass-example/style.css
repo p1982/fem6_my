@@ -1,0 +1,35 @@
+.menu-items {
+    display: inline-block;
+}
+.menu-link {
+    border: 1px solid orange;
+    color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 2s;
+}
+.menu-link:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.menu-items:hover .menu-link{
+    background-color: orange;
+    color: #fff;
+}
+
+/*.menu-items:nth-child(odd) .menu-link {*/
+/*     border: 2px solid black;*/
+/* }*/
+/*.menu-items:nth-child(even) .menu-link {*/
+/*    border: 2px solid blue;*/
+/*}*/
+
+.menu-items:nth-child(3n) .menu-link {
+     border: 2px solid black;
+ }
+/*.menu-items:nth-child(even) .menu-link {*/
+/*    border: 2px solid blue;*/
+/*}*/

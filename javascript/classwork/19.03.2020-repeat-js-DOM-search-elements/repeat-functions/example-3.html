@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <!-- <select id="currency">
+        <option value=UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+    </select> -->
+    <script>
+        const sallary = +prompt("Введите вашу зарплату");
+        const currencyExchange = prompt("Введите валюту зарплаты: UAH, USD, EUR")
+        const needExchange = prompt("Введите валюту конвертации, например: UAH, USD, EUR");
+
+        const sallaryResult1 = convertMoney(sallary, currencyExchange, needExchange);
+        console.log(sallaryResult1);
+        const sallaryResult2 = convertMoney(sallary);
+        console.log(sallaryResult2);
+        console.log(`Ваша зарплата в ${needExchange} = ${sallaryResult}`);
+
+        function convertMoney(money, currencyFrom = "UAH", currencyTo = "USD"){ 
+            let result = 0;
+            const fromTo = currencyFrom + currencyTo;
+            switch(fromTo) {
+                case "UAHUSD":
+                    result = money / 27;
+                    break;
+                case "UAHEUR":
+                    result = money / 31;
+                    break;
+                case "USDUAH":
+                    result = money * 27;
+                    break;
+            }
+            // if(currencyFrom === "UAH" && currencyTo === "USD") {
+            //     result = money / 27;
+            // }
+            // else if(currencyFrom === "UAH" && currencyTo === "EUR") {
+            //     result = money / 31;
+            // }
+            return result;
+        }
+
+    </script>
+</body>
+</html>

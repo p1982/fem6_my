@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            outline: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        class Button {
+            constructor(text){
+                this.text = text;
+            }
+
+            render(){
+                const button = document.createElement("button");
+                button.className = "btn";
+                button.textContent = this.text;
+                this.elem = button;
+                return button;
+            }
+        }
+
+        const button1 = new Button("Click me");
+        document.body.append(button1.render());
+    </script>
+</body>
+</html>

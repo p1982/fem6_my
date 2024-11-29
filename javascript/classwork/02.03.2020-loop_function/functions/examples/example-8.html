@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+
+    // const PI = 3.1415926;
+
+    const radius1 = +prompt("Введите радиус круга");
+    const area1 = calcCircleArea(radius1);
+    console.log(area1);
+
+    const radius2 = +prompt("Введите радиус второго круга");
+    const area2 = calcCircleArea(radius2);
+    document.getElementById("result").textContent = area2;
+
+    function calcCircleArea(radius) {
+        const area = 3.1415926 * radius**2;
+        return area;
+    }
+
+</script>
+</body>
+</html>

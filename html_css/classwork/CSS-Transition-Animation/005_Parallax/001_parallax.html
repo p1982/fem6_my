@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        overflow: hidden;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+
+        /*
+        Определяет расстояние между плоскостью z = 0 и пользователем для того,
+        чтобы придать 3D-позиционируемому элементу эффект перспективы.
+        Каждый трансформируемый элемент с z > 0 станет больше, а с z < 0 соответственно меньше.
+        Элементы, части которых находятся за пользователем, т.е. z-координата этих элементов
+        больше чем значение свойства perspective, не отрисовываются.
+        */
+        perspective: 1px;
+
+        /*
+        Определяет, как дочерние элементы должны отображаться в 3D-пространстве.
+        Это свойство должно использоваться совместно с transform.
+        * flat — дочерние элементы лежат в той же плоскости, что и их родитель.
+        * preserve-3d — дочерние элементы будут отображаться в 3D-пространстве.
+        */
+        transform-style: preserve-3d;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        font-family: 'Amatic SC', system-ui, sans-serif;
+        color: #ffffff;
+      }
+
+      header {
+        box-sizing: border-box;
+        min-height: 100vh;
+        text-align: center;
+        padding-top: 20%;
+        transform-style: inherit;
+      }
+
+      header::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-image: url(background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        /*
+        Устанавливает координаты точки, относительно которой будет происходить
+        трансформация элемента. transform-origin: <x> <y> <z>
+        */
+        transform-origin: center;
+
+        /* Параллакс - эффект */
+        transform: translateZ(-1px) scale(2);
+      }
+
+      header h1 {
+        font-size: 42px;
+      }
+
+      header small {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Параллакс-эффект</h1>
+      <small>в действии...</small>
+    </header>
+
+    <!-- <figure>
+      <p><img src="./parallax.jpg" alt="Параллакс" width="400" height="400" /></p>
+      <figcaption
+        style="color:black; font-family: Arial, Helvetica, sans-serif"
+      >
+        <p>
+          Параллакс(Parallax, греч. смена, чередование) – это изменение видимого
+          положение объекта по отношению к удаленному фону в зависимости от
+          нахождения наблюдателя.<br />
+          Первостепенно этот термин употреблялся для природных явлений, в
+          астрономии и геодезии.<br />
+        </p>
+
+        Отражение солнца в воде находится на отражении фонаря,<br />
+        хотя в неотражённом виде оно находится на заметном удалении над фонарём.
+        <br />
+
+        Параллакс в web - Это визуальные эффект который проявляется
+        исключительно при скрлле страницы (отделение фона сайта от другого
+        контента) <br />
+        link : https://www.kasper.by/blog/parallaks-effekt-na-saite/
+      </figcaption>
+    </figure> -->
+  </body>
+</html>
+
+<!--
+       Полезные ссылки:
+       https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateZ
+       https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective
+   -->

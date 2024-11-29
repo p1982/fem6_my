@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        У вас есть 2 массива пользователей.
+        Соедините их в 1, исключив тех, у кого совпадают email'ы.
+        */
+        const users1 = [
+        {
+            name: "Елена",
+            lastName: "Гилберт",
+            email: "gilbert@gmail.com"
+        },
+        {
+            name: "Кэролайн",
+            lastName: "Форбс",
+            email: "k.forbs@gmail.com"
+        },
+        {
+            name: "Клаус",
+            lastName: "Майклсон",
+            email: "mikelson@gmail.com"
+        }];
+    
+        const users2 = [
+        {
+            name: "Дэймон",
+            lastName: "Сальваторе",
+            email: "daemon@gmail.com"
+        },
+        {
+            name: "Ребекка",
+            lastName: "Майклсон",
+            email: "mikelson@gmail.com"
+        },
+        {
+            name: "Джереми",
+            lastName: "Гилберт",
+            email: "gilbert@gmail.com"
+        }];
+
+        /*
+        1.создать массив с уник для юзер 2
+        2.перебрать юзер 2 и если email`a нет в юзер1 то пушить его в юник
+        */
+        
+const users2Unique = users2.filter(elem => !users1.find(item => (item.email === elem.email)));
+
+        // const uniqueUser = []
+        // users2.forEach(item=>{
+        //     console.log(item);
+        //     if(!users1.find(elem => elem.email===item.email)){
+        //         uniqueUser.push(item)
+        //     }
+            
+        // });
+
+        const result = users1.concat(users2Unique);
+   
+        console.log(result);
+        
+    </script>
+</body>
+</html>

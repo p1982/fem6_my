@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS transition example</title>
+    <meta charset="utf-8" />
+    <style>
+      /* Cтиль описывает текущее состояние элемента */
+      .block {
+        width: 150px;
+        height: 150px;
+        background-color: purple;
+
+        /* Описывает плавный переход из одного состояния в другое */
+        transition: background-color 0.5s, width 1s;
+      }
+
+      .block:hover {
+        background-color: orange;
+        width: 200px;
+        /** Важно: место определения свойства transition имеет значение. 
+            Если оно определено в блоке правил псевдо-класса,
+            поведение плавного перехода будет другим:
+            переход в обратную сторону не будет осуществлён. */
+         /*transition: background-color 0.5s;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block"></div>
+  </body>
+</html>

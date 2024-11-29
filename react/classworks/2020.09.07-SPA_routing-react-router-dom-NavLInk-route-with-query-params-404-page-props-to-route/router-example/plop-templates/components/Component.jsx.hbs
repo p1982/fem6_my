@@ -1,0 +1,21 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import classes from './{{pascalCase name}}.module.scss';
+
+const {{pascalCase name}} = (props) => {
+  return (
+   <div className={classes.root}>
+       {{pascalCase name}}
+   </div>
+  );
+};
+
+{{pascalCase name}}.defaultProps = {
+    example: '',
+};
+
+{{pascalCase name}}.propTypes = {
+    example: PropTypes.string,
+};
+
+export { {{pascalCase name}} };

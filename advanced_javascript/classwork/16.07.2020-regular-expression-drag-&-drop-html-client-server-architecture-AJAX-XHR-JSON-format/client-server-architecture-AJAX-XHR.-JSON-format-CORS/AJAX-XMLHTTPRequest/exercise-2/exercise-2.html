@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+           <h3>Драконы Дейенерис Таргариен</h3>
+            <ol id="dragons-list"></ol>
+            
+            <h3>Вольные города Эссоса</h3>
+            <ul id="free-towns-list"></ul>
+        </div>
+    </div>
+</div>
+
+<script>
+        /*
+        Отправьте AJAX-запрос на адрес "http://danit.com.ua/dragons-list".
+        В качестве ответа вы получите строку вида: "Дрогон. Рейгаль. Визерион"
+        Используя полученный ответ, Выведите внутри ol с id="dragons-list" список всех драконов Дейенерис Таргариен.
+        
+        Отправьте AJAX-запрос на адрес "http://danit.com.ua/free-towns-list".
+        В качестве ответа вы получите строку вида: "Браавос. Волантис. Квохор. Лис. Лорат. Мир. Норвос. Пентос. Тирош."
+        Используя полученный ответ, Выведите внутри ol с id="free-towns-list" список всех Вольных городов Эссоса.
+        
+        Подумайте, как оптимизировать код, чтобы не писать одно и то же дважды.
+        */
+
+ 
+
+ const dragonList = document.getElementById('dragons-list')
+ const freeTownsList = document.getElementById('free-towns-list')
+
+sendRequest("GET", 'http://danit.com.ua/dragons-list', showList, dragonList);
+sendRequest("GET", 'http://danit.com.ua/free-towns-list', showList, freeTownsList);
+ 
+function showList(list, place){
+    const listItems = list.split('. ').map(elem => `<li>${elem}</li>`).join(' ');
+    place.insertAdjacentHTML('beforeend', listItems);
+ }
+
+ function sendRequest (type, address, func, ...args){
+     const request = new XMLHttpRequest();
+     request.open(type, address);
+     request.send();
+     request.onload = function(){
+        if (request.status >= 300) {
+            console.log(`${request.status}: ${request.statusText}`);
+           }
+        else {
+            console.log(request.response);
+            func(request.response, ...args)
+        }
+     }
+ }  
+
+</script>
+</body>
+</html>

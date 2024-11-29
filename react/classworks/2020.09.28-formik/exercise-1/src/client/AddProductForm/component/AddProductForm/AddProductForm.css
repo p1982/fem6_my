@@ -1,0 +1,8 @@
+.product-form {
+    width: 300px;
+    margin: 20px auto;
+}
+.product-form > input, .product-form > select  {
+    width: 100%;
+    margin: 5px;
+}

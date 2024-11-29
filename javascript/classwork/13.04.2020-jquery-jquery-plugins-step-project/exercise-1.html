@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #is-leap-year {
+            
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="year" placeholder="Введите год">
+    <button id="is-leap-year" data-target="year">Узнать</button>
+    <p id="leap-year-result"></p>
+    <!--  Задача: пользователь вводит в поле ввода год.
+     Вывести внутри тега p с id leap-year-result ответ
+     - высокосный год или нет.  -->
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    /*
+        1. Найти кнопку с id="is-leap-year"
+        2. Повесить на нее обработчик события click.
+        3. Считать то, что ввел пользователь в поле с id="year".
+        4. Передать в функцию isLeapYear.
+        5. Создать на основе ответа функции префикс: "не" или "".
+        6. Вывести сообщение внутри p с id="leap-year-result"
+    */
+     $("#is-leap-year").click(function(){
+         const year = $("#year").val();
+         const prefix = (isLeapYear(year)) ? "" : "не";
+         $("#leap-year-result").text(`${year} - ${prefix}високосный`);
+     });
+
+     function isLeapYear (year){
+         const date = new Date(year, 2, 0);
+         console.log(date);
+         const days = date.getDate();
+         console.log(days);
+         return days === 29;
+     }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students = ["Анусуримбор Кэллхус", "Друз Акхеймион", "Анусуримбор Моргэнхуз"];
+
+        // Метод push() добавляет элемент в конец массива. А что он возвращает?
+        students.push("Елена Кравец");
+        /*
+        students[students.length] = "Елена Кравец";
+        */
+//        console.log(students);
+        
+        console.log(students.push("Елена Воробей"));
+
+        // Метод unshift() добавляет элемент в начало массива. А что он возвращает?
+        students.unshift("Виктор Первый");
+//        console.log(students);
+        
+        // Метод pop() вырезает элемент из конца массива и возвращает его.
+//        const studentLast = students.pop();
+//        console.log(studentLast);
+//        console.log(students);
+
+        // Метод shift() вырезает элемент из начала массива и возвращает его.
+        console.log(students)
+        const studentFirst = students.shift();
+        console.log(studentFirst);
+        console.log(students);
+    </script>
+</body>
+</html>

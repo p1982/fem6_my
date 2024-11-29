@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .error-text {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script src="component.js"></script>
+    <script>
+    /*
+    Напишите универсальный класс Input, который будет создавать однострочное поле ввода. У него будут такие параметры:
+    - тип (text, email, password, number, date, submit и т.д.);
+    - name;
+    - обязательное поле или нет;
+    - id;
+    - классы;
+    - placeholder;
+    - errorText - выводит текст ошибки, если поле обязательно к заполнению и не было заполненно;
+    
+    А также такие методы как:
+    - render - возвращает HTML-разметку поля ввода;
+    - handleBlur - срабатывает, если поле обязательно к заполнению и не было заполнено.
+    
+    Можете использовать универсальный класс Component
+    
+    */
+        class Input extends Component {
+
+            handleFocus = () => {
+                if(this.error) {
+                    this.error.remove()
+                }
+            };
+
+            handleBlur = () => {
+                if(!this.elem.value) {
+                    const error = this.createElement("p", {style: "color: red"}, this.props.errorText);
+                    this.elem.after(error);
+                    this.error = error;
+                }
+            };
+
+            render() {
+                const {errorText, ...attr} = this.props;
+                const element = this.createElement("input", attr);
+                if(attr.required) {
+                    element.addEventListener("focus", this.handleFocus)
+                    element.addEventListener("blur", this.handleBlur)
+                }
+                this.elem = element;
+                return element;
+            }
+        };
+        
+        const inputProps = {
+            type: "text",
+            name: "userName",
+            required: true,
+            id: "userId",
+            className: "form-control",
+            placeholder: "Введите имя пользователя",
+            errorText: "Неверное имя пользователя"
+        }
+
+        const input = new Input(inputProps)
+        document.body.append(input.render());
+    </script>
+</body>
+</html>

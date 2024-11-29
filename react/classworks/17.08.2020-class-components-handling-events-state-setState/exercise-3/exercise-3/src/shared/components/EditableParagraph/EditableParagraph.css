@@ -1,0 +1,10 @@
+.content-text {
+    display: inline-block;
+}
+
+.action-link {
+    display: inline-block;
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}

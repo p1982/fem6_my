@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Component {
+            constructor(props){
+                this.props = {...props};
+            }
+
+            createElement(tag, attr, content){
+                const element = document.createElement(tag);
+                for(const [key, value] of Object.entries(attr)){
+                    if(value) {
+                        element[key] = value;
+                    }
+                }
+                element.innerHTML = content;
+                return element;
+            }
+        }
+
+        class Button extends Component {
+
+            handleClick = ()=> {
+                this.elem.classList.toggle(this.activeClass);
+            }
+
+            render() {
+                const {text, activeClass, ...attr} = this.props;
+                const btn = this.createElement("button", attr, text)
+                btn.addEventListener('click', this.handleClick);
+                this.elem = btn;
+                return btn
+            }
+        }
+
+
+        const newButton = {
+            text: "Нажми меня",
+            id: "click-btn",
+            className: "btn btn-primary",
+            activeClass: "active"
+        };
+
+        const button = new Button(newButton);
+        document.body.append(button.render());
+
+    </script>
+</body>
+</html>

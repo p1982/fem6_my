@@ -1,0 +1,15 @@
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-row {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    background-color: #000;
+    list-style: none;
+    padding: 0;
+}

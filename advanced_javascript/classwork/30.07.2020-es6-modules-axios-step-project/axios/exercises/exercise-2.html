@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <select id="house-name" name="house-name">
+        <option>Выберите дом</option>
+        <option value="Lannister">Ланнистеры</option>
+        <option value="Targaryen">Таргариены</option>
+        <option value="Stark">Старки</option>
+        <option value="Baratheon">Баратеоны</option>
+        <option value="Tully">Талли</option>
+        <option value="Arryn">Аррены</option>
+        <option value="Tyrell">Тиррелы</option>
+        <option value="Martell">Мартеллы</option>
+        <option value="Greyjoy">Грейджои</option>
+    </select>
+
+    <script src='axios.min.js'></script>
+    
+    <script>
+    /*
+    Напишите код, который работает так: 
+    1. Пользователь выбирает великий дом, и под списом появляется информация о нем.
+    2. Для того, чтобы узнать нужную информацию, отправьте POST запрос 
+    по адресу "http://danit.com.ua/westeros-great-house".
+    Тело запроса должно выглядеть так: 
+    {
+	   "house": "Lannister"
+    }
+    3. Для авторизации используйте заголовок "Authorization" со значением 
+    "Bearer eyJ0eXAiOiJKV1QiL"
+    4. Ответ вы получите в формате:
+    {
+        "words": "Услышь мой рёв!",
+        "head": "Тайвин Ланнистер",
+        "heir": "Джейме Ланнистер",
+        "castle": "Утес Кастерли"
+    }   
+    Используйте axios
+    */
+
+    const req = axios.create({
+       baseURL: 'http://danit.com.ua',
+       headers: {
+           Authorization: "Bearer eyJ0eXAiOiJKV1QiL"
+       }
+   })
+
+   const namesList = document.getElementById('house-name')
+   namesList.addEventListener('change', function(){
+       const body = {house: this.value}
+       req.post('/westeros-great-house', body)
+       .then(({data}) =>{
+           const descr = document.createElement('div')
+           const {words, head, heir, castle} = data
+           descr.insertAdjacentHTML('beforeend', `<p>words of this house is ${words}, head is ${head}, heir is ${heir} and castle is ${castle}</p>`)
+           namesList.after(descr)
+       }
+    ) })
+   
+
+
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap:20px;
+        }
+        .cards__item {
+            position: relative;
+            padding: 15px 15px;
+            /* width: 200px;
+            height: 200px; */
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .cards__close {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        class Component {
+            constructor(props) {
+                this.props = Object.assign({}, props);
+            }
+
+            createElement(tag, attr, ...content) {
+                const elem = document.createElement(tag);
+                for(const [key, value] of Object.entries(attr)) {
+                    elem[key] = value
+                }
+                console.log(content)
+                content.forEach(item => {
+                    if(typeof item === "string") {
+                        elem.insertAdjacentHTML("beforeend", item);
+                    } else if(item instanceof Component) {
+                        const newElem = item.render();
+                        elem.append(newElem);
+                    }
+                });
+                return elem;
+            }
+        }
+
+        class CardList extends Component {
+
+            listProps = {
+                className: "cards",
+                id: "cards"
+            };
+
+            deleteCard() {
+
+            }
+
+            render() {
+                const deleteCard = this.deleteCard;
+                const cards = this.props.characters.map(item => new Card({deleteCard, ...item}));
+                const list = this.createElement("div", this.listProps, ...cards);
+                console.log(cards)
+                return list;
+            }
+        }
+
+        class Card extends Component {
+
+            cardProps = {
+                className: "cards__item"
+            }
+
+            cardContent = `<span class="cards__close">X</span>
+                            <p>${this.props.name} ${this.props.lastName}</p>
+                            <p>${this.props.sex} ${this.props.age}</p>
+                            <p>${this.props.status}</p>`;
+
+            deleteCard = this.props.deleteCard.bind(this);
+
+            render() {
+                const card = this.createElement("div", this.cardProps, this.cardContent);
+                const closeBtn = card.querySelector(".close__item");
+                this.elem = card;
+                return card;
+            }
+        }
+
+        const characters = [
+        {
+            name: "Елена",
+            lastName: "Гилберт",
+            age: 17, 
+            sex: "women",
+            status: "human"
+        },
+        {
+            name: "Кэролайн",
+            lastName: "Форбс",
+            age: 17,
+            sex: "women",
+            status: "human"
+        },
+        {
+            name: "Аларик",
+            lastName: "Зальцман",
+            age: 31,
+            sex: "man",
+            status: "human"
+        },
+        {
+            name: "Дэймон",
+            lastName: "Сальваторе",
+            age: 156,
+            sex: "man",
+            status: "vampire"
+        },
+        {
+            name: "Ребекка",
+            lastName: "Майклсон",
+            age: 1089,
+            sex: "women",
+            status: "vampire"
+        },
+        {
+            name: "Клаус",
+            lastName: "Майклсон",
+            age: 1093,
+            sex: "man",
+            status: "vampire"
+        }];
+
+        const charactersListProps = {
+            characters
+        };
+
+        const charactersList = new CardList(charactersListProps);
+        console.log(charactersList)
+        // document.body.append(charactersList.render())
+    </script>
+</body>
+</html>

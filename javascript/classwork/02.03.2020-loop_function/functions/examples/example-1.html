@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // "Объявляем", то есть создаем функциюю
+        //global scope variables
+        const number = 10
+        const num = 6
+
+        //in variable we take result of calling function
+        const result = calcCircleArea(number) // number radios circle area - 10 
+
+        //calling function a few times
+        calcCircleArea(7, 5, 5, 6, 10, 20, 30)
+        calcCircleArea(6)
+        calcCircleArea()
+
+        //fubctin declaration
+        function calcCircleArea(radius = 5) {
+            const params = [...arguments]
+            console.log(radius);
+            console.log(arguments);
+            console.log(params);
+            const circleArea = 3.1516926 * radius ** 2;
+            function isArray1() {
+                const circleArea1 = 0
+                console.log(num)
+                number * 8
+            }
+            isArray1()
+            return circleArea;
+            // return (
+            //     3.1516926 * radius ** 2
+            // )
+        }
+
+        //expresion 
+        const radius = (...array) => { // [10, 2, 5, 5, 4, 2, 5, 6]
+            console.log(array);
+            //console.log(arguments);
+
+        }
+        const result1 = radius(number, 2, 5, 5, 4, 2, 5, 6) // result of calling function
+        // const radius1 = function(){
+
+        // }
+        // radius1()
+        // (function (){
+
+        // }())
+        [1,2,3].map((item, index)=>{})
+        function User() { }
+        const user = new User();
+
+        // radius(number)
+        // const result1 = calcCircleArea(number); //  вызываем ее справа от знака '=', передавая ей значение. В результате в переменную 'result' будет сохранено посчитанное значение
+        /*
+        var radius;
+        radius = 10;
+        const circleArea = 3.1516926 * radius ** 2;
+        result = circleArea;
+        delete radius;
+        delete circleArea;
+        */
+
+        // const result2 = calcCircleArea(15);
+        /*
+        var radius;
+        radius = 15;
+        const circleArea = 3.1516926 * radius ** 2;
+        result = circleArea;
+        delete radius;
+        delete circleArea;
+        */
+        const doSomeThing = () => {
+
+        }
+        console.log(result1); // выводим результат на экран
+    </script>
+</body>
+
+</html>

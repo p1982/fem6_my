@@ -1,0 +1,13 @@
+.header-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+
+.header-menu-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 19px 20px;
+    color: #fff;
+}

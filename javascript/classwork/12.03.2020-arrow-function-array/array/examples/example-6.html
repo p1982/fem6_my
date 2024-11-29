@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const idiotsStr = "Роберт Баратеон; Джофри Баратеон; Робб Старк; Джон Сноу";
+        
+        const arr = idiotsStr.split("; ");
+        
+        //const kings = arr.slice(0, 2);
+        /*
+        const kings = [];
+        for(let i = 0; i < 2; i++) {
+            kings.push(arr[i])
+        }*/
+        /*
+        const starks = arr.slice(2);
+        
+        console.log(arr);
+        console.log(kings);
+        console.log(starks);
+        */
+// //        console.log(arr);
+//         const kings = arr.splice(0, 2, "hjkl");
+// //        console.log(kings);
+// //        console.log(arr);
+        
+//         const starks = arr.slice(0);
+//         const martells = ["Доран Мартелл", "Оберин Марелл"];
+// //        
+//         const friends = starks.concat(martells);
+// //        console.log(starks);
+// //        console.log(friends);
+        
+//          const frenchBreakfeast = ["круассаны", "Креп Сюзетт", "французский пудинг", "венские сосиски", "тосты с ягодным маслом", "омлет с ветчиной и помидорами"];
+        
+//         const frenchDinner = frenchBreakfeast.splice(3);
+//         console.log(frenchBreakfeast);
+//         console.log(frenchDinner);
+const array = [1, 3, 4, "a", "b", "c", null, undefined, [], true, false];
+
+const newArray = array.filter(item => typeof item !== "string");
+console.log(newArray);
+
+  
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

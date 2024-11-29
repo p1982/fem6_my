@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    Напишите функцию getShortProductInfo, 
+    которая получает объект типа product, 
+    и возвращает из него объект, описывающий краткое описание товара.  
+    */
+       const product = {
+           name: "Lenovo X120S",
+           fullName: "X120S (233-544-2)",
+           price: 18600,
+           shortDescr: "",
+           fullDesr: ""
+       };
+        
+        const shorProduct = spliceObj(product, "shortDescr", "fullDesr");
+        console.log(shorProduct);
+
+        function spliceObj (product){
+            const newProduct = Object.assign({},product);
+            for (let i = 1;  i< arguments.length; i++){
+                const key = arguments[i];
+                delete newProduct[key];
+            }
+            return newProduct
+        }
+    </script>
+</body>
+</html>

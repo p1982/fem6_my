@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Напишите функцию, которая считает количество слов в переданной строке. */
+        const article = 'I hate js';
+        function calcWord(string) {
+            let count = 0;
+            let words = string.split(' ');
+            // console.log(words);
+            for (i = 0; i < words.length; i++) {
+                if (words[i] != '') {
+                    count += 1;
+                }
+            }
+            return (count);
+        }
+        console.log(calcWord(article));
+    </script>
+</body>
+</html>

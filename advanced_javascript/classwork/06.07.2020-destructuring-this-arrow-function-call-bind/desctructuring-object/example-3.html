@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Вы также можете использовать оператор ... - spread, 
+        чтобы разложить объект на набор:
+        свойство1: значение1, свойство2: значение2 и т.д.
+        Обычно оно используется для копирования объекта
+        */
+        const user = {
+            status: "Десница Короля",
+            family: "Старк",
+            friend: "Роберт Баратеон",
+            weapon: "Лёд"
+        };
+        
+        const userClone = {...user};
+        user.status = "мертв";
+        console.log(userClone)
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid;
+    font-family: $font-family;
+
+    &-primary {
+        color: blue;
+        border-color: blue;
+    }
+}

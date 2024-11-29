@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+@font-face {
+	font-family: "MyCustomFont"; /* указываем название шрифта */
+	src: url('../fonts/Ubuntu.ttf'); /* путь к шрифту из папки css. Шрифты складываем в папку fonts */
+}
+
+.rubik-font {
+    font-family: "Rubik", sans-serif;
+}
+
+.ubuntu-font {
+    font-family: "MyCustomFont", sans-serif;
+}
+
+.arial-font {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+

@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5c2b84ff-81b3-47bf-8a9a-932b5d48ce6f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/_interview-form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/components/_build-form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/components/_builder.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/components/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/components/_common-form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/components/_preference-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/components/_sidebar-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/components/_sign-form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/components/_title.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/components/components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/_edit.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/_faq.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/about/_our-numbers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/about/_our-team.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/about/_testimonials.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/about/about.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/blog/_acrticles-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/blog/_single-post.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/blog/blog.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/common/_companies-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/common/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/common/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/common/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/common/_short-description.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/common/_slogan.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/employer/_company-description.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/employer/_employer-vacancies-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/employer/_employer-welcome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/employer/_offer-preview.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/employer/_position-details.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/employer/_talents-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/employer/employer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/employers/_banner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/employers/_employer-map.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/homepage/_about-us.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/homepage/_employer-location.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/homepage/_steps.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/homepage/homepage.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/job/_jobs-categories.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/job/_jobs-filter.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/job/_jobs-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/job/job.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/profile/_profile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/vacancy/_vacancy-description.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/big-project-scss-scructure/sections/vacancy/_vacancy-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/example-project/css/dekstop.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/example-project/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/example-project/css/tablet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/example-project/img/article-gallery/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/example-project/img/article-gallery/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/example-project/img/article-gallery/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/example-project/img/article-gallery/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/example-project/img/article-gallery/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/example-project/img/article-gallery/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/example-project/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/src/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/src/scss/_reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/src/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/src/scss/components/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/src/scss/components/_components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/src/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/src/scss/sections/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/src/scss/sections/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/src/scss/sections/_sections.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/gulp-for-scss/src/templates/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-min-structure/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-min-structure/src/img/blog/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-min-structure/src/img/top-slider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-min-structure/src/img/top-slider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-min-structure/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-min-structure/src/scss/_mixin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-min-structure/src/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-min-structure/src/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-min-structure/src/scss/sections/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/components/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/components/_components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/components/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/components/_titles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/layout/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/layout/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/layout/_layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/layout/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/layout/_our-preference.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/project-structure/src/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/simple-example/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/simple-example/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/simple-example/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/simple-example/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/simple-example/src/scss/_mixin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/simple-example/src/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/simple-example/src/scss/example.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/simple-example/src/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/examples/simple-example/src/scss/sections/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/exercises/exercise-1/The_Ham_Step_project.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/exercises/exercise-1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/exercises/exercise-1/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/exercises/exercise-2/The_Ham_Step_project.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/exercises/exercise-2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/exercises/exercise-2/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/exercises/exercise-3/Preview.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/exercises/exercise-3/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classword-03-SCSS/exercises/exercise-3/src/psd/Startuprr-Onepage.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/boots.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/css/bootstrap-styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/css/tablet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/img/01_homepage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/img/02_post-full-width.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/img/03_post-sidebar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/img/card-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/img/first-screen-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Playfair_Display/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Playfair_Display/PlayfairDisplay-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Playfair_Display/PlayfairDisplay-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Playfair_Display/PlayfairDisplay-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Playfair_Display/PlayfairDisplay-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Playfair_Display/PlayfairDisplay-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Playfair_Display/PlayfairDisplay-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Ubuntu/UFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Ubuntu/Ubuntu-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Ubuntu/Ubuntu-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Ubuntu/Ubuntu-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Ubuntu/Ubuntu-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Ubuntu/Ubuntu-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Ubuntu/Ubuntu-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Ubuntu/Ubuntu-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/Ubuntu/Ubuntu-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/FONTS/fonts.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/PSD/minimo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/practical-layout/ReadMe.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-01 Adaptive and responsive, Mobile First, Bootstrap 4 overview/topics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/.gitingore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-1/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-1/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-1/src/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-1/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-1/src/image/navbar-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-1/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-2/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-2/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-2/src/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-2/src/css/sections/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-2/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-2/src/image/navbar-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-2/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-3/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-3/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-3/src/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-3/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-3/src/image/blog/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-3/src/image/blog/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-3/src/image/blog/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-3/src/image/top-slider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-3/src/image/top-slider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-3/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-4/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-4/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-4/src/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-4/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-4/src/image/blog/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-4/src/image/blog/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-4/src/image/blog/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-4/src/image/top-slider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-4/src/image/top-slider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/example-4/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-1/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-1/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/blog/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/blog/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/blog/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/cards/blue-card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/cards/dacover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/cards/master-card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/cards/paypal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/cards/visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/bedroom-bed-banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/furniture/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/top-seller/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/top-seller/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/top-seller/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/top-seller/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/top-seller/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/top-seller/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/top-seller/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/top-seller/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/top-seller/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/top-seller/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/products/top-seller/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/stocks/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/stocks/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/stocks/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/stocks/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/top-slider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/img/top-slider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/scripts/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-2/src/scripts/work.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/blog/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/blog/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/blog/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/bedroom-bed-banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/furniture/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/top-seller/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/top-seller/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/top-seller/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/top-seller/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/top-seller/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/top-seller/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/top-seller/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/top-seller/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/top-seller/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/top-seller/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/products/top-seller/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/top-slider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/image/top-slider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/scripts/somefile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-3/src/scripts/somefile2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-4/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-4/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-4/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-5/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-5/src/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-5/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-5/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-6/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-6/src/js/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-6/src/js/work.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/blog/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/blog/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/blog/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/cards/blue-card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/cards/dacover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/cards/master-card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/cards/paypal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/cards/visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/bedroom-bed-banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/furniture/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/top-seller/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/top-seller/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/top-seller/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/top-seller/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/top-seller/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/top-seller/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/top-seller/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/top-seller/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/top-seller/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/top-seller/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/products/top-seller/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/stocks/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/stocks/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/stocks/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/stocks/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/top-slider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/exercise-7/src/image/top-slider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/node-js-example/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/npm-package.json-example/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/npm-package.json-example/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/npm-package.json-example/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/package.json-example/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/package.json-example/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/package.json-example/src/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/package.json-example/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/package.json-example/src/image/navbar-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/package.json-example/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/npm-package-json-gulp-gulp-modules/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/_interview-form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/components/_build-form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/components/_builder.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/components/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/components/_common-form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/components/_preference-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/components/_sidebar-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/components/_sign-form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/components/_title.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/components/components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/_edit.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/_faq.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/about/_our-numbers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/about/_our-team.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/about/_testimonials.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/about/about.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/blog/_acrticles-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/blog/_single-post.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/blog/blog.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/common/_companies-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/common/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/common/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/common/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/common/_short-description.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/common/_slogan.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/employer/_company-description.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/employer/_employer-vacancies-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/employer/_employer-welcome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/employer/_offer-preview.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/employer/_position-details.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/employer/_talents-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/employer/employer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/employers/_banner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/employers/_employer-map.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/homepage/_about-us.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/homepage/_employer-location.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/homepage/_steps.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/homepage/homepage.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/job/_jobs-categories.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/job/_jobs-filter.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/job/_jobs-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/job/job.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/profile/_profile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/vacancy/_vacancy-description.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/big-project-scss-scructure/sections/vacancy/_vacancy-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/exercise-1/The_Ham_Step_project.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/exercise-1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/exercise-1/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/exercise-2/Startuprr-Onepage.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/exercise-2/src/psd/Preview.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/exercise-2/src/psd/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-min-structure/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-min-structure/src/img/blog/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-min-structure/src/img/top-slider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-min-structure/src/img/top-slider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-min-structure/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-min-structure/src/scss/_mixin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-min-structure/src/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-min-structure/src/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-min-structure/src/scss/sections/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/components/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/components/_components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/components/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/components/_titles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/layout/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/layout/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/layout/_layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/layout/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/layout/_our-preference.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/project-structure/src/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/simple-example/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/simple-example/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/simple-example/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/simple-example/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/simple-example/src/scss/_mixin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/simple-example/src/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/simple-example/src/scss/example.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/simple-example/src/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/classwork/classwork-02-npm-package.json-gulp-and-its-modules/scss/simple-example/src/scss/sections/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/homework/homework-1-responsive/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/homework/homework-2-gulp-scss/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-1/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-1/topics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-2 Animation/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-2 Animation/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-2 Animation/img/girl/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-2 Animation/img/girl/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-2 Animation/img/girl/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-2 Animation/img/girl/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-2 Animation/img/items/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-2 Animation/img/items/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-2 Animation/img/items/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-2 Animation/img/items/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-2 Animation/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lesson-2 Animation/topics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lessson-3 Flex and Grid/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../advanced_html_css/preparation/lessson-3 Flex and Grid/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.03.2020-loop_function/functions/examples/example-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.03.2020-loop_function/functions/examples/example-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.03.2020-loop_function/functions/examples/functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.03.2020-loop_function/functions/practice/execice-5.v1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.03.2020-loop_function/functions/practice/exercise-5.v2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.03.2020-loop_function/functions/practice/exercise-5.v3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.04.2020-style-dom-elements-keyboard-events/keyboard-events/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.04.2020-style-dom-elements-keyboard-events/keyboard-events/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/example-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/exercise-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/02.04.2020-style-dom-elements-keyboard-events/style-dom-elements/exercise-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/examples/arrray-methods-need.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/examples/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/examples/example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/examples/example-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/examples/example-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/examples/example-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/examples/example-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/examples/example-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/examples/example-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/practice/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/practice/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/practice/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/practice/exercise-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/practice/exercise-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/array/practice/exercise-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/arrow-function/example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/arrow-function/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/arrow-function/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/arrow-function/exersice-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/default-parametres/example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/12.03.2020-arrow-function-array/default-parametres/exersice-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/19.03.2020-repeat-js-DOM-search-elements/repeat-functions/arrow-functions-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/19.03.2020-repeat-js-DOM-search-elements/repeat-functions/convert-example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/19.03.2020-repeat-js-DOM-search-elements/repeat-functions/converter-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/19.03.2020-repeat-js-DOM-search-elements/repeat-functions/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/19.03.2020-repeat-js-DOM-search-elements/repeat-functions/example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/19.03.2020-repeat-js-DOM-search-elements/repeat-functions/example-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/19.03.2020-repeat-js-DOM-search-elements/repeat-functions/function-declaration-expression-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/19.03.2020-repeat-js-DOM-search-elements/repeat-functions/functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/23.03.2020-DOM-search-elements/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/23.03.2020-DOM-search-elements/example-2.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/23.03.2020-DOM-search-elements/example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/23.03.2020-DOM-search-elements/example-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/23.03.2020-DOM-search-elements/example-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/23.03.2020-DOM-search-elements/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/23.03.2020-DOM-search-elements/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/23.03.2020-DOM-search-elements/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/1. variables/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/1. variables/10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/1. variables/11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/1. variables/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/1. variables/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/1. variables/4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/1. variables/5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/1. variables/6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/1. variables/7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/1. variables/8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/1. variables/9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/1. variables/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/2. basic data types/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/2. basic data types/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/2. basic data types/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/2. basic data types/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/3. arithmetical operations/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/3. arithmetical operations/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/3. arithmetical operations/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/4. user interaction/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/4. user interaction/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/4. user interaction/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/4. user interaction/4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/4. user interaction/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/alexandr-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/console-log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/const-variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/number-type.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/numbers-variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/practice/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/practice/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/practice/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/practice/4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/practice/5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/practice/6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/scripts-alexandr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/typeof-variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/variables-name-exercice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/variables-name.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/variables-types.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/variables-work-together.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/24.02.2020/variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/25.03.2020-DOM-mouse-events/dataset-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/25.03.2020-DOM-mouse-events/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/25.03.2020-DOM-mouse-events/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/25.03.2020-DOM-mouse-events/exercise-2.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/25.03.2020-DOM-mouse-events/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/25.03.2020-DOM-mouse-events/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/25.03.2020-DOM-mouse-events/exercise-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/25.03.2020-DOM-mouse-events/exercise-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/25.03.2020-DOM-mouse-events/exercise-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/25.03.2020-DOM-mouse-events/for-in-of-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/.idea/alert-prompt-confirm-arithmetical-operators.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/alert-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/concatenation/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/concatenation/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/confirm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/increment-decrement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/operators.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/.idea/practice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/exercise-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/exercise-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/practice/exercise-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/promt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/1. string conversion/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/1. string conversion/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/1. string conversion/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/2. number conversion/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/2. number conversion/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/2. number conversion/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/3. boolean conversion/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/alert-prompt-confirm-arithmetical-operators/type-casting/3. boolean conversion/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/if-else/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/if-else/example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/if-else/example-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/if-else/exercise-1.1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/if-else/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/if-else/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/if-else/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/if-else/exercise-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/isNaN-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/logical operators/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/logical operators/example-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/logical operators/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/logical operators/exercise-1.v2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/logical operators/exercise-1.v3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/logical operators/exercise-1.v4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/logical operators/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/switch-case/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/switch-case/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/switch-case/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/27.02.2020/if-else-tertanr-opertator-swith/ternar-operator/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/30.03.2020-DOM-create-insert-remove-elements/before-after-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/30.03.2020-DOM-create-insert-remove-elements/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/30.03.2020-DOM-create-insert-remove-elements/exercise-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/30.03.2020-DOM-create-insert-remove-elements/exercise-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/30.03.2020-DOM-create-insert-remove-elements/exercise-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/30.03.2020-DOM-create-insert-remove-elements/exercise-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/30.03.2020-DOM-create-insert-remove-elements/exercise-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/30.03.2020-DOM-create-insert-remove-elements/innerHTML-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/30.03.2020-DOM-create-insert-remove-elements/remove-example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/date/.idea/date.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/date/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/date/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/date/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/date/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/objects/exersices/.idea/exersices.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/objects/exersices/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/objects/exersices/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/objects/exersices/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/objects/exersices/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/string/example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/string/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javascript/classwork/5.03.2020-objects-string-date-time/string/string-example-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../step-project-ham/Step Project Ham Pictures.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../step-project-ham/readme.md" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1dnov27829mFifELCrluBB1N4nb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c2b84ff-81b3-47bf-8a9a-932b5d48ce6f" name="Default Changelist" comment="" />
+      <created>1593070445438</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593070445438</updated>
+      <workItem from="1593070449015" duration="39000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

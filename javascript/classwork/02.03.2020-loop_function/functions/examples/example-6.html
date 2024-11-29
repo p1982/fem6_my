@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    start(10);
+    /*
+    var num = 10;
+    console.log(10);
+        var num = 9;
+        console.log(9);
+            var num = 8;
+            console.log(8);
+    return underfiend;
+    * */
+    function start(num) {
+        console.log(num);
+        if(num === 1) {
+            return num;
+        }
+        else {
+            start(num - 1);
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects metods</title>
+</head>
+<body>
+<script>
+    const coffeeMachine = {
+        water: 1000,
+        coffee: 200,
+        milk: 500,
+        makeCoffee(coffeeType) {
+            if(!water || !coffee) {
+                return "Добавьте содержимое";
+            }
+            if(coffeeType === "капучино"){
+                this.water -= 20;
+                this.coffee -= 10;
+                this.milk -= 10;
+                return (`Получи свое ${coffeeType}`);
+            }
+            if(coffeeType === "американо") {
+                this.water -=200;
+                this.coffee -=20;
+                return (`Получи свое ${coffeeType}`);
+            }
+            if(coffeeType === "экспрессо") {
+                return ("Выучи .... русский язык!");
+            }
+        },
+    };
+    Object.keys(coffeeMachine) // ["water", "coffee", "milk", "makeCoffee"]
+const array =Object.values(coffeeMachine)
+    const coffeeWant = prompt("Чего изволите?");
+    coffeeMachine.makeCoffee(coffeeWant);
+    console.log(coffeeMachine);
+    console.log(array);
+/*
+    const slider = {};
+    slider.img = "img/img1.jpg, img/img2.jpg";
+    slider.slideType = "slow";
+    slider.start();
+*/
+</script>
+</body>
+</html>

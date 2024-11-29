@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Напишите функцию клонирования объекта с 1 уровнем вложенности.
+        Используйте Object.entries и деструктуризацию.
+        */
+        // const user = {
+        //     name: "Харви",
+        //     lastName: "Спектр",
+        //     status: "управляющий партнер"
+        // };
+        //
+        // const newObject = {};
+        //
+        // for (const [key,value] of Object.entries(user)) {
+        //     newObject[key] = value;
+        // }
+        //
+        // console.log(newObject);
+        const user = {
+            name: "Харви",
+            lastName: "Спектр",
+            status: "управляющий партнер"
+        };
+        const newObj = {};
+        for (const [key, value] of Object.entries(user)){
+            newObj[key] = value;
+        }
+        console.log(newObj)
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <a href="" class="btn">Нажми меня!</a> -->
+    <script>
+
+        // function createReeverseBtn(firstText, secondText) {
+        //     const btnObj = {
+        //         elem: null,
+        //         firstText,
+        //         secondText,
+        //         click() {
+        //             const text = this.elem.textContent;
+        //             this.elem.textContent = (text === this.firstText) ? this.secondText : this.firstText;
+        //         },
+        //         create() {
+        //             const reverseBtn = document.createElement("a");
+        //             reverseBtn.className = 'btn';
+        //             reverseBtn.textContent = this.firstText;
+        //             reverseBtn.addEventListener("click", this.click.bind(this));
+        //             this.elem = reverseBtn;
+        //             return reverseBtn;
+        //         }
+        //     };
+        //     return btnObj;
+        // }
+
+        class ReverseBtn {
+            constructor(firstText, secondText) {
+                this.firstText = firstText;
+                this.secondText = secondText;
+            }
+
+            handleClick() {
+                const text = this.elem.textContent;
+                this.elem.textContent = (text === this.firstText) ? this.secondText : this.firstText;
+            }
+
+            render() {
+                const reverseBtn = document.createElement("a");
+                reverseBtn.className = 'btn';
+                reverseBtn.textContent = this.firstText;
+                reverseBtn.addEventListener("click", this.handleClick.bind(this));
+                this.elem = reverseBtn;
+                return reverseBtn;        
+            }
+        }
+
+        const btn1Obj1 = new ReverseBtn("Нажми меня", "Погладь меня");
+        // const btn1 = btn1Obj1.render();
+        const btn1Obj2 = new ReverseBtn("Поцелуй меня", "Покорми меня");
+        // const btn2 = btn1Obj2.render();
+        document.body.append(btn1Obj1.render(), btn1Obj2.render());
+
+        
+
+        // const reverseBtn = document.querySelectorAll(".btn");
+        // reverseBtn.forEach(btn => btn.addEventListener("click", function(){
+        //     if(this.textContent === "Нажми меня!") {
+        //         this.textContent = "Погладь меня!"
+        //     } else {
+        //         this.textContent = "Нажми меня!"
+        //     }
+        // }));
+    </script>
+</body>
+</html>

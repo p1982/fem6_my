@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow function declaration</title>
+</head>
+<body>
+    <script>
+        
+        const isLegal = (age)=> {
+            return (age >= 18);
+        }
+        
+//        const isLegal = age => age >= 18;   // return (age >= 18);
+        
+//        console.log(isLegal(17));
+//        console.log(isLegal(19));
+        
+        
+        
+        const doctor = {
+            age: 19,
+            isLeagal() {
+                console.log(this)
+                return this.age >= 18;
+            },
+            isSomething:()=> {
+                console.log(this)
+                return this.age >= 18;
+            }
+        }        
+        
+        console.log(doctor.isLeagal(17));
+        console.log(doctor.isSomething(17));
+    </script>
+</body>
+</html>

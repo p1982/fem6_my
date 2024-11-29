@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap');
+
+/*COMMON STYLE*/
+.img-fluid{
+    max-width: 100%;
+}
+.container  {
+    width: 1170px;
+    margin: 0 auto;
+}
+.text-colored {
+    color: #f1ad1d;
+}
+.clearfix::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+.underline::after{
+    content:"";
+    background-color: #f1ad1d;
+    height: 3px;
+    width: 60px;
+    display: block;
+    margin: 25px auto 57px;
+}
+/*HEADER*/
+.header {
+    background-image: url(../img/header-img.png);
+    padding-top: 531px;
+    padding-bottom: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header-title {
+    font-family: 'Montserrat', sans-serif;font-weight: bold;
+    font-size: 48px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.header-subtitle {
+font-family: 'Lato', serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+}
+.header-title-slogan {
+    font-family: 'Montserrat', sans-serif;font-weight: bold;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    font-size: 54px;
+    text-transform: uppercase;
+    padding: 45px 30px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/*ABOUT US*/
+.about-us{
+padding-top:72px;
+    padding-bottom: 65px;
+}
+.section-title{
+    font-family: 'Montserrat', sans-serif;
+font-size: 22px ;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 36px;
+}
+.section-description{
+    font-family: 'Lato',sans-serif;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 52px;
+}
+
+.awards-list{
+    text-align: center;
+}
+/*NAVBAR*/
+.navbar{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.navbar-logo{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+    color: #f4bd49;
+    text-transform: uppercase;
+    font-weight: bold;
+    float: left;
+}
+.navbar-nav{
+    float: right;
+}
+.navbar-nav-item{
+
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navbar-nav-link{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.navbar-underline{
+    background-color: orange;
+    height: 3px;
+    margin-top: 15px;
+}
+/*OUR SERVICES*/
+.our-services-list{
+    width: 570px;
+    float: left;
+}
+.our-service-item{
+    position: relative;
+    float: left;
+    width: 270px;
+    height: 148px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.our-service-item:nth-child(odd){
+    margin-right: 30px;
+}
+.our-service-name{
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    background-color: #000000;
+    font-family: 'Lato',sans-serif;
+    box-sizing: border-box;
+    width: 117px;
+    padding: 11px;
+    position: absolute;
+    bottom:8px;
+    left: 11px;
+
+}
+.our-service-info{
+    float: right;
+    width: 569px;
+}
+.our-service-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+.our-service-title-color{
+    color: orange;
+}
+.our-service-description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 27px;
+}
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    width: 176px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    background: #f1ad1d;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 14px;
+}

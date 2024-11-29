@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <h2>Список персонажей Алисы в Стране Чудеч</h2>
+    </div>
+    <script>
+        /*
+        Дан массив строк. Сформируйте на его основе массив этих же строк
+        в верхнем регистре, и выведите в виде нумерованного списка внутри div с id="root"
+        */
+        const names = ["Алиса", "Шляпник", "Мартовский заяц", "Чеширский кот", "Красная королева"];
+        
+        const namesList = names.map(el => `<li>${el.toUpperCase()}</li>`).join("");
+        const rootElement = document.getElementById("root");
+        rootElement.insertAdjacentHTML("beforeend", `<ol>${namesList}</ol>`);
+        
+        // const namesUpercase = names.map( el => {
+        //     const li = `<li>${el.toUpperCase()}</li>`
+        //     return li;
+        // })
+        // const ol = document.createElement('ol');
+        // ol.innerHTML = namesUpercase.join("");
+        // const root = document.getElementById("root");
+        // root.append(ol);
+
+        // const namesUpercase = [];
+        // names.forEach(el => {
+        //     const nameUpercase = el.toUpperCase();
+        //     namesUpercase.push(nameUpercase);
+        // })
+        // const namesNumbers = [];
+        // namesUpercase.forEach( el => {
+        //     const li = document.createElement("li");
+        //     li.textContent = el;
+        //     namesNumbers.push(li);
+        // })
+        // const ol = document.createElement('ol');
+        // namesNumbers.forEach( el => {
+        //     ol.append(el);
+        // })
+        // const root = document.getElementById("root");
+        // root.append(ol);
+        const vegetables = ['Капуста', 'Репа', 'Редиска', 'Морковка'];
+const clone  = [...vegetables];
+const clone1 = vegetables;
+const clone2 = vegetables.slice(0);
+const clone3 = vegetables.splice(0);
+
+const clone4 = [];
+function copy(){
+vegetables.forEach((item) => {
+  console.log(items);
+  clone4.push(items);
+})
+}
+copy()
+console.log(clone4);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    Напишите функцию, которая создает объект, описывающий фильм.
+    В качестве аргументов она получает:
+    - название фильма;
+    - год выпуска;
+    - имя продюссера;
+    И возвращает объект вида:
+    {
+        name: "Джон Уик",
+        year: 2011,
+        producer: "Киану Ривз"
+    }
+    */
+
+    const createFilm = function(name, year, producer){
+      const film = {
+            name,
+            year,
+            producer,
+        }
+        return film
+    }
+   console.log( createFilm('Джон Уик', "2011", "Киану Ривз"))
+
+    </script>
+</body>
+</html>

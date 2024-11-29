@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Представьте себе, что вам нужно индекс какого-то элемента в массиве. Самый грубый способ "В лоб" - перебрать весь массив и сохранить индекс найденного элемента в  отдельную переменную
+       
+         const englishBreakfeast = ["яйца", "бекон", "сосиски", "жареные помидоры", "фасоль", "булочка с джемом", "кофе"];
+        const searchPharse = "жареные помидоры";
+        /*
+        let index = null;
+        for(let i = 0; i < englishBreakfeast.length; i++) {
+            if(englishBreakfeast[i] === searchPharse) {
+                index = i;
+                break;
+            }
+        }
+        console.log(index);
+        */
+        // это довольно громоздко и неудобно. Поэтому был придумал метод indexOf(чтоНайти) - он возвращает индекс первого найденого элемента или -1 если его нет
+        console.log(englishBreakfeast.indexOf(searchPharse));
+        console.log(englishBreakfeast.indexOf("лембас"));
+        
+        // Небольшое неудобство этого метода в том, что если тебе нужно просто узнать, есть ли элемент в массиве (и тебе не важен его индекс), то нужно сравнивать с -1
+        if(englishBreakfeast.indexOf(searchPharse) !== -1) {
+            console.log("Жареные помидоры найдены!")
+        }
+        
+        // Для этого был придуман метод includes(чтоНайти), который возвращает true или false в зависимости от результата поиска
+
+        if(englishBreakfeast.includes(searchPharse)) {
+            console.log("Жареные помидоры найдены!")
+        }      
+    </script>
+</body>
+</html>

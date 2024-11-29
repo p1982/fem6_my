@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    right: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.nav-top-company {
+    text-transform: uppercase;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+}
+
+.nav-top-menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-top-link {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #626262;
+}
+
+.first-screen-img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .nav-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-top-menu {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+
+/*.my-container {*/
+/*    max-width: 1080px;*/
+/*    margin: 0 auto;*/
+/*    background-color: olive;*/
+/*}*/
+
+/*@media screen and (max-width: 992px) and (min-width: 769px) {*/
+/*    .my-container {*/
+/*        max-width: 850px;*/
+/*        background-color: tomato;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 768px) and (min-width: 577px) {*/
+/*    .my-container {*/
+/*        max-width: 600px;*/
+/*        background-color: wheat;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 576px) and (min-width: 321px){*/
+/*    .my-container {*/
+/*        max-width: 400px;*/
+/*        background-color: paleturquoise;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 320px) {*/
+/*    .my-container {*/
+/*        max-width: 250px;*/
+/*        background-color: fuchsia;*/
+/*    }*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

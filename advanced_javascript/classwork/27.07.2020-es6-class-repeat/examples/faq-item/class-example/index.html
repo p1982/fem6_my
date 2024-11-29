@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="accordion" id="faq-list">
+        </div>
+    </div>
+
+    <script>
+        class FAQItem {
+            constructor({question, answer}) {
+                this.question = question;
+                this.answer = answer;
+                this.status = false;
+            }
+            
+            render(){
+                const elem = document.createElement("div");
+                elem.className = "accordion-item";
+                elem.insertAdjacentHTML("beforeend", `<button aria-expanded="false">
+                                                        <span class="accordion-title">${this.question}</span><span class="icon" aria-hidden="true"></span>
+                                                      </button>
+                                                    <div class="accordion-content">
+                                                        <p>${this.answer}</p>
+                                                    </div>`);
+                const button = elem.querySelector("button");
+                button.addEventListener("click", this.handleClick.bind(this));
+                this.elemButton = button;
+                this.elem = elem;
+                return elem;
+            }
+            
+            handleClick() {
+                this.status = !this.status;
+                this.elemButton.setAttribute('aria-expanded', `${this.status}`);             
+            }
+        }
+        
+        const faqList = document.getElementById("faq-list");
+        
+        const faqItemPros = {
+            question: "Why is the moon sometimes out during the day?",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
+        };
+        
+        const faqItem = new FAQItem(faqItemPros);
+        faqList.append(faqItem.render())
+
+    </script>
+</body>
+
+</html>

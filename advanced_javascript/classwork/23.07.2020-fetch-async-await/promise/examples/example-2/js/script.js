@@ -1,0 +1,45 @@
+const userAge = prompt("Ваш возраст?");
+const promise1 = new Promise (function(resolve, reject){
+    setTimeout(()=> {
+        if(userAge >= 18) {
+        resolve("Вход без маски разрешен");
+     }
+        else {
+            reject("Доступ к ночной клуб без маски запрещен!")
+        }
+    }, 1000);
+});
+
+promise1.then(result => {
+    console.log(result);
+}).
+    catch(error => {
+        console.log(error);
+    });
+
+console.log("After promise");
+
+/*
+// Схема работы Promise
+promise1 = {
+    status: "Pending".
+    result: undefined,
+    resolve(resultValue){
+        this.status = "fullfiled"; // выполнен коректно
+        this.result = resultValue;
+    },
+    reject(errMessage){
+        this.status = "rejected"; выполнен с ошибкой
+        this.result = errMessage;
+    }
+};
+
+promise1.toDo = function(){
+    if(userAge >= 18) {
+        this.resolve("Вход без маски разрешен");
+    }
+    else {
+        this.reject("Доступ к ночной клуб без маски запрещен!")
+    }
+}
+*/

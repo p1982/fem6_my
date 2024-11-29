@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="login" placeholder="Введите логин">
+<p class="error-message"></p>
+<script>
+
+    const loginField = document.getElementById("login");
+    loginField.addEventListener("blur", function () {
+        console.log(this.value.length)
+        if(this.value.length < 3) {
+            this.nextElementSibling.textContent = "Неправильный логин! Слишком мало букв"
+        }
+    })
+</script>
+</body>
+</html>

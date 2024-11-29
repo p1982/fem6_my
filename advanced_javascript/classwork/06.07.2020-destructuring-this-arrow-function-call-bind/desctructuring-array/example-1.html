@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+        Деструктуризация - это особый синтаксис присваивания. По сути массив справа, проходя через знак = ,
+        раскладывается в набор значений через запятую, и они присваиваются соотвествующим переменным, написанным
+        в квадратных скобках через запятую. Если переменных меньше, чем элементов массива, остальные значения "теряются",
+        так как не находят себе переменных)
+        */
+        const user = ["Александр", "88 кг", "189 см", "IQ - 146", "45 размер"];
+    
+        const [name, weight, height, ...rest] = user;
+        /*
+        Эти действия аналогичны записи:
+         const name = properties[0];
+         const weight = properties[1];
+         const height = properties[2];        
+        */
+        console.log(name);
+        console.log(weight);
+        console.log(height);
+
+
+        /* При деструктуризации можно пропускать часть значений, не сохраняя их в переменные. 
+        Для этого  нужно не писать имя переменной, поставить запятую и продолжить перечисление.
+        */
+        const person = ["герцог", "Рокэ", "Алва", "Кэналлоа", "Первый Маршал Талига", "сапфиры"];
+        const [status, , , region, work] = person;
+        console.log(status)
+        console.log(region)
+        console.log(work)
+
+
+        /* При деструктуризации переменным можно указывать значения по умолчанию. 
+            Это нужно на случай если им "не хватит" элементов из массива (он окажется слишком коротким),
+            и нам не хочется чтобы в переменную сохранилося undefined
+       */
+        const userData = ["Алексей Михайлович", "спортсмен",];
+        const [userName, userWork, userStatus = "не женат"] = userData;
+        console.log(userName);
+        console.log(userWork);
+        console.log(userStatus);
+        
+        /*
+        При деструктуризации присваивать значения можно чему угодно, а не только переменным,
+         которые мы сразу же создаем. Например: ранее созданным переменным или свойства объекта
+        */
+
+        const result = ["Харви", "Спектр", "управляющий партнер"];
+        const worker = {};
+        let workerStatus = "";
+        [worker.name, worker["last name"], workerStatus] = result;
+        console.log(worker);
+        console.log(workerStatus);
+
+    </script>
+</body>
+
+</html>

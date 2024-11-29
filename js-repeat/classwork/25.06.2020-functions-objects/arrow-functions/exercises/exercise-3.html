@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    Напишите функцию, удаляющую дублирующиеся элементы в массиве и возвращающую
+     новый массив без повторяющихся элементов.
+    В качестве аргумента она должна получать массив примитивных типов данных.
+    */
+        
+        const arr = [13, 45, 15, 28, 13, 14, 455, 45];
+        const getUniqArrey = (arr) => {
+            const newArrey = [];
+            arr.forEach((item) => {
+            if (!newArrey.includes(item)) {
+                newArrey.push(item)
+            }
+        });
+        console.log(newArrey);
+    }
+
+    getUniqArrey(arr);
+
+    </script>
+</body>
+</html>

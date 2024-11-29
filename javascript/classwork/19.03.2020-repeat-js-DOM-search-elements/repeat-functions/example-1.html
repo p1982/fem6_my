@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        // window = {}
+        const sallaryInGrn = +prompt("Введите вашу зарплату в грн");
+        const currencyExchange = prompt("Введите валюту конвертации, например: USD, EUR");
+
+        const sallaryDollar = convertMoney(sallaryInGrn, currencyExchange);
+        console.log(sallaryDollar);
+        // console.log(money);
+        // console.log(currency);
+        // console.log(result);
+        /*
+        var money = sallaryInGrn;
+        var currency = currencyExchange;
+        console.log(money);
+        console.log(currency);
+        let result = null;
+        switch(currency) {
+            case "USD":
+            result = money/27;
+            break;
+            case "EUR":
+            result = money/32;
+            break;                
+        }        
+        result1 = result;
+        delete money;
+        delete currency;
+        delete result;
+        */
+        // console.log(`Ваша зарплата в ${currencyExchange} = ${result1}`);
+        
+        // const result2 = convertMoney(50000, "EUR");
+        /*
+        var money = 50000;
+        var currency = "EUR";
+        console.log(money);
+        console.log(currency);
+        let result = null;
+        switch(currency) {
+            case "USD":
+            result = money/27;
+            break;
+            case "EUR":
+            result = money/32;
+            break;                
+        }        
+        result2 = result;
+        delete money;
+        delete currency;
+        delete result;
+        */
+
+        // const result3 = convertMoney();
+/*
+        var money;
+        var currency;
+        console.log(money);
+        console.log(currency);
+        let result = null;
+        switch(currency) {
+            case "USD":
+            result = money/27;
+            break;
+            case "EUR":
+            result = money/32;
+            break;                
+        }        
+        result2 = result;
+        delete money;
+        delete currency;
+        delete result;
+        */        
+        // const currencyExchange2 = prompt("Введите валюту конвертации, например: USD, EUR");
+        // const result2 = convertMoney(sallaryGrn, currencyExchange2);
+        // console.log(`Ваша зарплата в ${currencyExchange2} = ${result2}`);
+
+        function convertMoney(money, currency){
+            // console.log(money);
+            // console.log(currency);
+            let result = 0;
+            switch(currency) {
+                case "USD":
+                result = money/27;
+                // window.result;
+                // window.result = money/27;
+                break;
+                case "EUR":
+                result = money/32;
+                break;                
+            }
+            return result;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Представьте себе ситуацию: две компании решили объединится, и для этого
+        им нужно объединить базу данных своих клиентов. У вас есть 2 массива строк,
+        в каждом из них - фамилии клиентов. Создайте на их основе один массив,
+        который будет представлять собой объединение двух массив без повторяющихся
+        фамилий клиентов.
+        */
+
+        const clients1 = ["Гилберт", "Сальваторе", "Пирс", "Соммерс", "Форбс", "Донован", "Беннет"];
+        const clients2 = ["Пирс", "Зальцман", "Сальваторе", "Майклсон"];
+
+        // const newArr = clients1.slice(0);
+
+        // clients2.forEach(elem => {
+        //     if(!(newArr.includes(elem))){
+        //         newArr.push(elem)
+        //     }
+        // })
+
+        // console.log(newArr)
+
+        const client2Uniq = clients2.filter(elem => !clients1.includes(elem));
+        const allClients = clients1.concat(client2Uniq);
+
+        console.log(allClients)
+
+    </script>
+</body>
+</html>

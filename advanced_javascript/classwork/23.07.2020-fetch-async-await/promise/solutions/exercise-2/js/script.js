@@ -1,0 +1,91 @@
+/*
+Напишите программу, имитирующую работу деканата. Программа:
+1. Считывает введенную в input с name="score" оценку, и введное в input с name="subject" название предмета.
+2. Передает название предмета в функцию getSubjectMinGrade. 
+3. Если такой предмент есть в списке (в списке есть предметы biology, history и physics), программа получает из нее минимальный проходной балл 
+по этому предмету, программа сравнивает его с оценкой пользователя (введеной в input с name="score") и передает результат сравнения 
+(true или false) дальше функции getAnswer. 
+4. Функция getAnswer получает результат сравнения и на основе его возвращает текстовый ответ для студента - переведен ли пользователь 
+на следующий курс или нет. Ответ она передает в функцию showMessage.
+4. Функция showMessage выводит переданную ей фразу в p с id="result".
+5. Если введенного предмета нет на курсе, то программа выводит в p с id="result" с помощью функции showMessage текст ошибки.
+
+Нюансы написания программы:
+- функция getSubjectMinGrade в качестве аргумента получает название предмета чего спустя секунду должна:
+    - вернуть минимальный проходной балл для предмета, если он есть в базе;
+    - либо, если предмета нет в базе, она возвращает ошибку с текстом "Такого предмета нет на учебном курсе";
+  Минимальные проходные балы:
+  biology: 7
+  history: 5
+  physics: 8
+
+- функция getAnswer имитирует запрос к базе данных деканата для получения прравильной формулировки ответа. Она получает в 
+качестве аргумента true или false, и возвращает спустя секунду после вызова фразу  "Студент переведен на следующий курс", если аргумент true, 
+или "Студент отправлен на пересдачу" - если аргумент false.
+Если же ее аргумент не true и не false, она возвращает ошибку с текстом "Тип аргумента может быть только boolean"
+- функция showMessage получает 2 аргумента:
+    - фразу, которую  нужно вывести;
+    - ссылку на DOM-элемент, внутри которого нужно вывести фразу.
+и выводит переданную ей фразу внутри DOM-элемента.
+
+Для решения задачи используйте Promise и then для организации цепочки действий:
+вызов функции getSubjectMinGrade -> вызов функции getAnswer -> вызов функции showMessage
+*/
+
+const getAnswer = (result) => {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const answers = {
+                true: "Студент переведен на следующий курс",
+                false: "Студент не переведен на следующий курс"
+            };
+            if (typeof result === "boolean") {
+                resolve(answers[result]);
+            } else {
+                const error = new Error("Тип аргумента может быть только boolean")
+                reject(error);
+            }
+        }, 1000);
+    });
+    return promise;
+};
+
+const getSubjectMinGrade = (subject) => {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const allSubjects = {
+                biology: 7,
+                history: 5,
+                physics: 8
+            };
+            const subjectsName = Object.keys(allSubjects);
+            if (subjectsName.includes(subject)) {
+                resolve(allSubjects[subject]);
+            } else {
+                const error = new Error("Такого предмета нет на учебном курсе")
+                reject(error);
+            }
+        }, 1000);
+
+    });
+    return promise;
+};
+
+const showMessage = (message, element) => element.textContent = message;
+
+const studentTransferredForm = document.getElementById("student-transferred");
+studentTransferredForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const score = this.querySelector("[name=score]").value;
+    const subject = this.querySelector("[name=subject]").value;
+    const resultContainer = document.getElementById("result");
+
+    const minGrade = getSubjectMinGrade(subject);
+    minGrade
+        .then((minScore) => {
+            const result = score >= minScore;
+            return getAnswer(result)
+        })
+        .then(answer => showMessage(answer, resultContainer))
+        .catch(error => showMessage(error.message, resultContainer));
+});        

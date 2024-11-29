@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    Напишите класс Пациент с такими параметрами:
+    - ФИО;
+    - дата рождения;
+    - пол;
+    
+    и методом:
+    - getAge, возвращающим возраст пациента;
+    
+    И на его основе создайте 2 расширенных класса:
+    1. ПациентКардиолога, с дополнительными параметрами:
+    - среднее давление;
+    - перенесенные проблемы с сердечно-сосудистой системой;
+    
+    и методом:
+    - высчитать индекс массы тела;
+    2. ПациентСтоматолога с дополнительными параметрами:
+    - дата последнего визита;
+    - текущее лечение;    
+    */
+
+     class Patient{
+        //  constructor(firstName, lastName, middleName, birthDate,sex){
+            constructor(props){
+                this.props = {...props}  
+            }
+        
+         getAge(){
+             const {birthDate} = this.props
+            
+         }
+     }
+
+     class CardioPatient extends Patient{
+         
+        //  constructor(avaragePreassure, deasisec, ...args){
+        //      super(...args)
+        //      this.avaragePreassure = avaragePreassure;
+        //      this.deasisec  = deasisec;
+        //  }
+
+
+         calcVeightIndex(){
+
+         }
+         
+     }
+
+     class Dantistpatient extends Patient{
+
+        constructor(lastVisit, teraphy, ...args){
+            super(...args)
+        }
+        
+     }
+       
+    </script>
+</body>
+</html>

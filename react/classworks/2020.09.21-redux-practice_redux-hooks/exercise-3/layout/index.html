@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="to-do-list">
+        <form id="add-case-form" action="#" class="add-case-form">
+            <input type="text" name="case" class="form-control" placeholder="Название дела">
+            <label>Важное</label>
+            <input name="important" type="checkbox">
+            <input type="submit" value="Добавить дело">
+        </form>
+        <p class="to-do-case-count">Всего дел: 3. Важных - 1. Выполненых - 1.</p>
+        <ul class="case-list">
+            <li class="case-list-item">
+                case 1.
+                <label>Важное</label><input type="checkbox">
+                <label>Выполнено</label><input type="checkbox">
+                <a href="#">X</a>
+            </li>
+            <li class="case-list-item">
+                <strong>case 2.</strong>
+                <label>Важное</label><input type="checkbox" checked>
+                <label>Выполнено</label><input type="checkbox">
+                <a href="#">X</a></li>
+            <li class="case-list-item">
+                <i>case 3</i>
+                <label>Важное</label>
+                <input type="checkbox">
+                <label>Выполнено</label><input type="checkbox" checked>
+                <a href="#">X</a></li>                                            
+        </ul>
+    </div>
+
+</body>
+</html>

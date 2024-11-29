@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="root">
+
+        </div>
+    </div>
+    <script src="component.js"></script>
+    <script>
+        class FAQItem extends Component {
+
+            status = false;
+            
+            content = `<button aria-expanded="false">
+                            <span class="accordion-title">${this.props.question}</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>${this.props.answer}</p>
+                        </div>`;
+        
+            handleClick = () => {
+                this.status = !this.status;
+                this.elemButton.setAttribute('aria-expanded', `${this.status}`);             
+            };        
+            
+            render(){
+                const element = this.createElement("div", {className: "accordion-item"}, this.content);
+                const button = element.querySelector("button");
+                button.addEventListener("click", this.handleClick);
+                this.elemButton = button;
+                this.element = element;
+                return element;
+            }
+        }
+
+        class FAQ extends Component {
+
+            heading = `<h2>${this.props.title}</h2>`;
+
+            itemsContainer = `<div class="accordion"></div>`;
+
+            render(){
+                const {heading, itemsContainer, props: {list}} = this;
+                const faqContainer = this.createElement("div", {className: "faq"}, `${heading} ${itemsContainer}`);
+                const faqItems = list.map(item => {
+                    const element = new FAQItem(item);
+                    return element.render();
+                });
+                const container = faqContainer.querySelector(".accordion");
+                container.append(...faqItems);
+                return faqContainer;
+            }
+        }
+
+        const faqListPros = {
+            title: "Frequently Asked Questions",
+            list: [
+                {
+                question: "Why is the moon sometimes out during the day?",
+                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
+                },
+                {
+                question: "Why is the sky blue?",
+                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
+                },
+                {
+                question: "Will we ever discover aliens?",
+                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
+                },
+                {
+                question: "How much does the Earth weigh?",
+                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
+                },
+                {
+                question: "How do airplanes stay up?",
+                answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti."
+                }                                    
+            ]
+        };
+        
+        const rootElement = document.getElementById("root");
+
+        const faq = new FAQ(faqListPros);
+        rootElement.append(faq.render());
+    </script>
+</body>
+
+</html>

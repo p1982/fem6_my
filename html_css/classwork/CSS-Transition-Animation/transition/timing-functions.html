@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS cubic-bezier functions</title>
+    <meta charset="utf-8" />
+    <style>
+      .container {
+        width: 800px;
+        border: 10px solid red;
+      }
+
+      .linear,
+      .cubic-bezier {
+        width: 150px;
+        height: 150px;
+        background-color: #00ff90;
+        transition-property: width;
+        transition-duration: 2s;
+        margin: 5px;
+      }
+
+      .linear {
+        transition-timing-function: linear;
+      }
+
+      .cubic-bezier {
+        transition-timing-function: cubic-bezier(0, 0.74, 0.83, -0.67);
+      }
+
+      .linear:hover,
+      .cubic-bezier:hover {
+        width: 790px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="linear">Линейная функция</div>
+      <div class="cubic-bezier">Кривая Безье</div>
+    </div>
+    <a href="http://cubic-bezier.com/" target="_blank" rel="noreferrer noopener"
+      >Инструмент для создания кривой Безье</a
+    >
+  </body>
+</html>

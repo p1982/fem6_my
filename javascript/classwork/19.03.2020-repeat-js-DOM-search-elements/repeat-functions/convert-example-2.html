@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <!-- <select id="currency">
+        <option value=UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+    </select> -->
+    <script>
+        // const sallary = +prompt("Введите вашу зарплату");
+        // const currencyExchange = prompt("Введите валюту зарплаты: UAH, USD, EUR")
+        // const needExchange = prompt("Введите валюту конвертации, например: UAH, USD, EUR");
+
+        // const sallaryResult1 = convertMoney(sallary, currencyExchange, needExchange);
+        // console.log(sallaryResult1);
+        // const sallaryResult2 = convertMoney(sallary);
+        // console.log(sallaryResult2);
+        // console.log(`Ваша зарплата в ${needExchange} = ${sallaryResult}`);
+
+        /* 1000 долларов
+            const grn = 1000 * usd; // 27000;
+            const result = grn * eur;
+        */
+
+        const result1 = convertMoney(10000, "USD", "EUR");
+        console.log(result1);
+        const result2 = convertMoney(1000, "EUR", "RUB");
+        console.log(result2)
+        function convertMoney(money, currencyFrom = "UAH", currencyTo = "USD"){ 
+
+            const currency = [
+                {
+                name: "USD",
+                rate: 27
+                },
+                {
+                    name: "EUR",
+                    rate: 31
+                },
+                {
+                    name: "RUB",
+                    rate: 0.3
+                }
+            ];
+
+            const rateFrom = currency.find(item => item.name === currencyFrom).rate;
+            const grn = money * rateFrom;
+
+            const rateTo = currency.find(item => item.name === currencyTo).rate;
+            const result = grn / rateTo;
+      
+            return result;
+        }
+
+    </script>
+</body>
+</html>

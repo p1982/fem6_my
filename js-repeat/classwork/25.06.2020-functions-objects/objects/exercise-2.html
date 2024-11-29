@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+    Напишите функцию полного копирования свойств объекта. 
+    Все значения свойств - примитивные.
+    Функция в качестве аргумента получает объект и возвращает новый объект.
+    */
+   const card1 = {
+       title: "Джон Сильвер",
+       age: 42
+   };
+
+   const card2 = cloneObj(card1);
+   console.log(card2);
+
+   function cloneObj(obj) {
+       const newObj = Object.assign({},obj)
+    //    const newObj = {};
+    //     for (const key in obj) {
+    //         newObj[key] = obj[key];
+    //     }
+        return newObj
+   }
+   
+    </script>
+</body>
+</html>

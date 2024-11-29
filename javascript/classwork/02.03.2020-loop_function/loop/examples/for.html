@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Пользователь вводит свое имя.
+    Если он ввел пустую строку - переспросить у него имя.
+    Переспрашвать максимум 3 раза.
+    Если имя он все-таки ввел - вывести его на экран  -->
+
+    <script>
+        
+        /*
+        name = prompt('Введите свое имя');
+
+        if (name === "") {
+            name = prompt('Введите свое имя');
+        }
+        if (name === "") {
+            name = prompt('Введите свое имя');
+        }
+        if (name === "") {
+            name = prompt('Введите свое имя');
+        }
+        */
+        const array = [[1,2], [3,4]]
+        const array1 = [[1,2,3,4,5], [1,2,3,4,5], [1,2,3,4,5]]
+        
+        let name = prompt('Введите свое имя');
+
+        if (name === "") {
+            for (let i = 0; i < 3; i++) {
+                
+                name = prompt('Введите свое имя');
+                if (name !== "") {
+                    break;
+                    // i = 3
+                }
+            }
+        } 
+        if(name !== "") {
+            console.log(name)
+        }
+        else {
+            console.log("Кем нужно быть чтобы за 4 раза не ввести правильно имя?????")
+        }
+        
+
+    </script>
+
+</body>
+
+</html>

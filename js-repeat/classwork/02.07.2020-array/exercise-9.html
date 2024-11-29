@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap:20px;
+        }
+        .cards__item {
+            position: relative;
+            padding: 15px 15px;
+            /* width: 200px;
+            height: 200px; */
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .cards__close {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards" id="cards">
+        <!-- <div class="cards__item">
+            <span class="cards__close">X</span>
+            <p>Елена Гилберт</p>
+            <p>women 17</p>
+            <p>human</p>
+        </div> -->
+    </div>
+    <script>
+
+
+        /*
+        Напишите код, который:
+        1. Выводит на экран объекты в виде карточек, по 4 в ряд.
+        2. В правом верхнем углу карточк выводит крестик, при нажатии на который 
+        карточка удаляется со страницы и объект удаляется из массива.
+        */
+        const characters = [
+        {
+            name: "Елена",
+            lastName: "Гилберт",
+            age: 17, 
+            sex: "women",
+            status: "human"
+        },
+        {
+            name: "Кэролайн",
+            lastName: "Форбс",
+            age: 17,
+            sex: "women",
+            status: "human"
+        },
+        {
+            name: "Аларик",
+            lastName: "Зальцман",
+            age: 31,
+            sex: "man",
+            status: "human"
+        },
+        {
+            name: "Дэймон",
+            lastName: "Сальваторе",
+            age: 156,
+            sex: "man",
+            status: "vampire"
+        },
+        {
+            name: "Ребекка",
+            lastName: "Майклсон",
+            age: 1089,
+            sex: "women",
+            status: "vampire"
+        },
+        {
+            name: "Клаус",
+            lastName: "Майклсон",
+            age: 1093,
+            sex: "man",
+            status: "vampire"
+        }];
+
+        // 1. Получит ссылку на дом елемент с id cards;
+        // 2. Создать новый массив 6ти дом елементов на основе обьектов, 
+        // привоить каждой карточке обьекта значение дата атрибута
+        // 3. Вывсти на екран используя insertAjastElement
+        // 4. Найти елемент  классом cards__close и повесить на него обработчик 
+        // событий клик
+        // 6. Подняться от крестика к closest card item и удалить его 
+        // 7. используя метод сплайс удалить карточку из обьекта
+        const cards = document.getElementById("cards");
+        const newArr = characters.map((elem, index) => {
+            const div = document.createElement('div');
+            div.dataset.id = index;
+            div.className = "cards__item";
+            div.insertAdjacentHTML("beforeend", `<span class="cards__close">X</span>
+                                                <p>${elem.name} ${elem.lastName}</p>
+                                                <p>${elem.sex} ${elem.age}</p>
+                                                <p>${elem.status}</p>`);
+            const closeBtn = div.querySelector(".close__item");
+            closeBtn.addEventListener('click', function() {
+                const card = this.closest('.cards__item');
+                const index = card.dataset.id
+                characters.splice(index, 1)
+                this.closest('.cards__item').remove()
+            });
+        });
+        
+    newArr.forEach(element => cards.append(element));
+    </script>
+</body>
+</html>

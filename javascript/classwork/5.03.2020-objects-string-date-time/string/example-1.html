@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String example</title>
+</head>
+<body>
+    <script>
+        let str1 = "Бриан л'Мориа";
+        let str2 = str1;
+        str2 = 'Крогар ди\n \'Аншвар';
+        
+        console.log(str1.length);
+        
+        console.log(str1[4]);
+
+       str1[0] = "К"; // так - не работает
+
+        str1 = "К" + "риан л'Мориа";
+        console.log(str1);
+
+    </script>
+</body>
+</html>

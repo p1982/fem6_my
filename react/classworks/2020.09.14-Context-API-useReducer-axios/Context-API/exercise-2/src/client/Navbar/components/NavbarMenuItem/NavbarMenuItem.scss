@@ -1,0 +1,12 @@
+.navbar-nav-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #000;
+
+    &.active {
+        background-color: red;
+    }
+}

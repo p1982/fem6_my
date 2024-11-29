@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id='greate-houses'>
+
+    </ul>
+    <script>
+        /*
+        Отправьте AJAX-запрос на адрес "http://danit.com.ua/westeros-great-houses-json".
+        В качестве ответа вы получите массив объектов вида:
+        {
+            "name": "Ланнистеры",
+            "words": "Услышь мой рёв!",
+            "head": "Тайвин Ланнистер",
+            "heir": "Джейме Ланнистер",
+            "place": "Утес Кастерли"
+        }
+        
+        Используя полученный ответ, Выведите внутри ul с id="greate-houses" список Великих домов Вестероса с данными о них: Название, и в виде вложенного списка - глава, наследник, девиз, резиденция. Пример вывода:
+        <li>Ланнистеры:
+            <ul>
+                <li>Глава: Тайвин Ланнистер.</li>
+                <li>Наследник: Джейме Ланнистер.</li>
+                <li>Девиз: Услышь мой рёв!</li>
+                <li>Резиденция: Утес Кастерли.</li>
+            </ul>
+        </li>        
+        */ 
+        
+        const req = new XMLHttpRequest();
+        req.open("GET", "http://danit.com.ua/westeros-great-houses-json");
+        
+        req.responseType = "json";
+        req.send();
+        
+        req.onload = ()=> {
+            if(req.status >= 300) {
+                throw new AJAXRequestError(req.statusText)
+            }
+            else {
+                const greateHouseList = document.getElementById("greate-houses");
+                const housesItems = req.response.map(house => {
+                    const {name, words, head, heir, place} = house;
+                    const markup = `<li>${name}
+                                        <ul>
+                                            <li>Глава: ${head}</li>
+                                            <li>Наследник: ${heir}</li>
+                                            <li>Девиз: ${words}</li>
+                                            <li>Резиденция: ${place}</li>
+                                        </ul>`;
+                    return markup;
+                });
+                greateHouseList.insertAdjacentHTML("beforeend", housesItems);
+            }
+        }
+
+        class AJAXRequestError extends Error {
+            constructor(message) {
+                super(message); 
+                this.name = "AJAXRequestError"; 
+            }
+        }
+
+  
+    </script>
+</body>
+
+</html>

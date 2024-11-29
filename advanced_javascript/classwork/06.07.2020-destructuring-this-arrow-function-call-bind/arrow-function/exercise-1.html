@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="root"></div>
+<!--<button id="click-me">Click me</button>-->
+<script>
+
+    /*
+    Напишите объекту btn метод render, который создает DOM-элемент "button",
+    вставляет в него текст, храняющийся в свойстве text объекта btn,
+     вешает на нее обработчик click, который при клике меняет текст 
+     на храняющийся в свойстве secondText.
+     Метод render должен возвращать кнопку, после чего ее нужно вставить на страницу.
+    */
+    const btn = {
+        text: "Click me",
+        secondText: "Eat me",
+        render() {
+            const button = document.createElement('button');
+            button.textContent = this.text;
+            button.addEventListener('click', ()=> {
+                const {elem, text, secondText} = this;
+                elem.textContent = (elem.textContent === text) ? secondText : text;
+            });
+            this.elem = button;
+            return button;
+        }
+    }
+    const reversButton = btn.render();
+    document.body.append(reversButton);
+</script>
+</body>
+</html>

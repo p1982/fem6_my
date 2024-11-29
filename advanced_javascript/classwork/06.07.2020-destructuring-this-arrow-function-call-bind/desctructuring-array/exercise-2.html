@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .pirates-list {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="pirates-list" id="pirates-list">
+        <li>Луффи</li>
+        <li>Санджи</li>
+        <li>Зоро</li>
+        <li>Нами</li>
+        <li>Робин</li>
+    </ul>
+
+<script>
+   /*
+   Напииште код, который сделает жирным 1 и 3 элемент списка в ul с id=""
+   */
+  // const ul = document.getElementById('pirates-list');
+  // const [firstElem, , secondElem] = ul.children;
+  // firstElem.style.fontWeight = 'bold';
+  // secondElem.style.fontWeight = 'bold';
+    const ul = document.getElementById('pirates-list');
+   console.log(ul);
+    const [firstElement, ,secondElem] = ul.children;
+   console.log(firstElement);
+   console.log(secondElem);
+   firstElement.style.fontWeight = 'bold';
+   secondElem.style.fontWeight = 'bold';
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>text-overflow</title>
+    <style type='text/css'>
+        #id1 {
+            display: block; /* Fallback for non-webkit */
+            display: -webkit-box;
+            max-width: 400px;
+            height: 55px; /* Fallback for non-webkit */
+            margin: 0 auto;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+        }
+
+        #id2 {
+            width: 450px;
+            border: 1px #000 solid;
+
+            -ms-text-overflow: clip;
+            -o-text-overflow: clip;
+            text-overflow: clip; /* Текст обрезается по размеру области. */
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <p id="id1"><b>text-overflow:ellipsis</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, cumque deleniti error excepturi illo nemo neque quasi qui sapiente sint. Aliquam aliquid architecto at atque beatae cum debitis doloremque doloribus ea eaque eius, enim error esse est expedita fugit, inventore ipsa iure laboriosam magnam maxime minus nemo numquam porro quaerat qui quisquam repellat repudiandae saepe sapiente tempora voluptate voluptates voluptatibus? Placeat quibusdam quo quod totam? Ab accusamus aliquam blanditiis dignissimos, eius esse fugit, nihil nisi odio placeat provident quasi, quis totam voluptatem voluptatibus? Aliquid atque aut corporis doloremque ducimus eaque error eveniet exercitationem officiis placeat, quidem quis sed temporibus vero.</p>
+    <p id="id2"><b>text-overflow:clip</b> - Текст выходящий за пределы родительского элемента</p>
+</body>
+</html>

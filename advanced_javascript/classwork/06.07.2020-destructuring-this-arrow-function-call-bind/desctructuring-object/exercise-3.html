@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /*
+        Напишите функцию getBookShortInfo, которая получает объект, описывающий книгу
+        (в этом объекте будут 4 свойства: author, name, article,price),
+        и возвращает новый объект, в котором будут всего 2 свойства: author и name.
+        Используйте эту функцию, чтобы из масива books создать масив shortBooksInfo.     
+        */
+        
+    const books = [
+        {
+            author: "Дарья Донцова",
+            name: "Дед Снегур и Морозочка",
+            article: "4342D",
+            price: 70
+        },
+        {
+            author: "Скотт Бэккер",
+            name: "Тьма, что приходит прежде",
+            article: "4421F",
+            price: 70           
+        },
+        {
+             author: "Дарья Донцова",
+            name: "Детектив на диете",
+            article: "4642D",
+            price: 70           
+        },
+        {
+            author: "Скотт Бэккер",
+            name: "Тысячекратная мысль",
+            article: "2344F",
+            price: 70           
+        }        
+    ];
+        
+        const getShortBookInfo = function(obj){
+            const {article, price, ...newObj} = obj;
+            return newObj;
+        }
+
+        const shortBooksInfo = books.map(getShortBookInfo)
+        /*
+        Выведет:
+        [
+            {
+                author: "Дарья Донцова",
+                name: "Дед Снегур и Морозочка"
+            },
+            {
+                author: "Скотт Бэккер",
+                name: "Тьма, что приходит прежде"        
+            },
+            {
+                 author: "Дарья Донцова",
+                name: "Детектив на диете"     
+            },
+            {
+                 author: "Скотт Бэккер",
+                name: "Тысячекратная мысль"         
+            }        
+        ];       
+        */
+    </script>
+</body>
+</html>

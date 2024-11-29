@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<!--  Создайте функцию getAge, 
+    которая высчитывает возраст на указаную дату в формате:
+"гг.мм.дд" и вызовите ее для каждого объекта -->
+    <script>
+        const user1 = {
+            name: "Отурн",
+            "last name": "ди'Аншвар",
+            birthday: "1245.02.23",
+        };
+
+        const user2 = {
+            name: "Крогар",
+            "last name": "ди'Аншвар",
+            birthday: "1845.05.10"
+        };
+
+        function getAge() {
+            const [year, month, day] = this.birthday.split(".");
+            const now = new Date();
+            const [nowYear, nowMonth, nowDay] = [now.getFullYear(), (now.getMonth() + 1), now.getDate()];
+            let age = nowYear - year;
+            if(nowMonth < month || (nowMonth === month && nowDay < day)) {
+                age --;
+            }
+            return age;
+        }
+        console.log(getAge.call(user1));
+        console.log(getAge.call(user2));
+
+    </script>
+</body></html>

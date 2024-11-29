@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function strSlice(str, from, to = str.length) {
+//        if(to === undefined) {
+//            to = str.length;
+//        }
+        let substr = '';
+//        for(let i = from; i < to; i++) {
+//            substr += str[i];
+//        }
+        substr = str.slice(from, ++to);
+        return substr;
+    }
+
+        console.log(strSlice("New Year", 4));
+//        console.log(strSlice("New Year", 0, 3));
+    </script>
+</body>
+</html>

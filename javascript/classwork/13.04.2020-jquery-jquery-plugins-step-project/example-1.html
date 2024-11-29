@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px 10px;
+        color: red;
+        border: 1px solid red;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <a href="#" class="btn reverse-btn">Click me!</a>
+    <a class="btn reverse-btn">Eat me!</a>
+  
+<!-- Без JQuery, на чистом JS -->
+<script>
+    /*
+    const buttons = document.getElementsByClassName("btn");
+    for(let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function(){
+            this.style.color = "white";
+            this.style.backgroundColor = "red";
+        });
+    }
+    */
+    </script>
+   
+<!--  С Jquery  -->
+
+<!-- Подключаем Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+    // const buttons = document.getElementsByClassName("btn");
+    // console.log(buttons);
+    // console.log($(".btn"));
+/*
+    $(".reverse-btn").click(function(){
+        $(this).css({"color": "white", "background-color": "red"});
+        $(this).css("font-size", "18px");
+    });
+*/
+    // Другой способ повесить обработчик. В чем между ними разница?
+    
+        $(".reverse-btn").on("click", function(){
+        $(this).css("color", "white");
+        $(this).css("background-color", "red");
+    });
+    
+    </script>
+
+</body>
+
+</html>

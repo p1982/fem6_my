@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+
+<script>
+    /*
+    Неапишите GET запрос по адресу
+    "http://danit.com.ua/free-towns-list-json,
+    который получает список городов в формате
+    JSON и выводит его на экран внутри ul с id="free-towns"
+    Используйте Promise. 
+    */ 
+ 
+//     $.ajax({
+//     url : "http://danit.com.ua/free-towns-list-json",
+//     dataType : "JSON",
+//     method: "GET",
+//     success (data){
+//        const townList = data.map(el => `<li>${el}</li>`).join("");
+//        console.log(townList) 
+//        $("#free-towns").html(townList);
+//     }
+// })
+
+const sendGetRequest = (url) => {
+    const answer = new Promise(function(resolve, reject) {  
+        const request = new XMLHttpRequest();
+        request.open('GET', url);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+            if (request.status >= 300) {
+                const error = {
+                                code: request.status,
+                                message: request.statusText
+                            };
+                reject(error);
+            }
+            else {
+                resolve(request.response)
+            }
+        }
+    });
+    return answer;
+}
+const rootElement = document.getElementById("root");
+
+const townsList = sendGetRequest('http://danit.com.ua/free-towns-list-json');
+townsList.then(result => {
+    const townsItems = result.map(elem => `<li>${elem}</li>`).join('');
+    rootElement.insertAdjacentHTML('beforeend', `<ul>${townsItems}</ul>`);
+});
+
+const dragonsList = sendGetRequest('http://danit.com.ua/dragons-list-json');
+dragonsList.then(result => {
+    const dragonsItems = result.map(elem => `<li>${elem}</li>`).join('');
+    rootElement.insertAdjacentHTML('beforeend', `<ol>${dragonsItems}</ol>`);
+});
+
+</script>
+</body>
+</html>

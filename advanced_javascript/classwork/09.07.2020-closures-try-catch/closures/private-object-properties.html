@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const product1 = createProduct("Lenovo X120S", 12000);
+        /*
+        const tempObj = {
+            name: "Lenovo X120S",
+            price: 120000
+        }
+
+        product.setPrice[[Enviroment]] = tempObj;
+        */
+        product1.setPrice(-20);
+        /*
+         tempObj.price = value
+        */
+        console.log(product1.getPrice());
+
+        function createProduct(name, price) {
+            const product = {
+                name,
+                setPrice(value){
+                    if(Number.isInteger(value) && value > 0){
+                        price = value
+                    }
+                },
+                getPrice(){
+                    return price
+                }
+            }
+            return product;
+        };
+    </script>
+</body>
+</html>

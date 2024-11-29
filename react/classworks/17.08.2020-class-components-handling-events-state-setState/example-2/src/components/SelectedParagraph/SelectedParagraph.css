@@ -1,0 +1,7 @@
+.content-text {
+    font-size: 18px;
+}
+
+.content-text.selected {
+    font-weight: bold;
+}

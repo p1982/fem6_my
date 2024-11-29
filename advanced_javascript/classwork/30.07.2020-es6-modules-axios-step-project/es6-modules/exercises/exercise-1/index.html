@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module">
+        /*
+        Создайте файл getById.js и напишите в нем функцию, которая:
+        - получает id DOM-элемента в качестве аргумента;
+        - находит и возвращает найденный DOM-элемент.
+        
+        Импортируйте ее в этот script, найдите с ее помощью div
+        с id="root" и выведите его в консоль
+        */
+       
+       import getById from './getById.js';
+       console.log(getById("root"));
+    </script>  
+</body>
+</html>

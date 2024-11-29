@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Objects example</title>
+</head>
+
+<body>
+    <script>
+        const fouthPropertyName = "article";
+        const fouthPropertyValue = 1345244;
+
+        let obj = {
+            brand: "Aser",
+            "full name": "Swift 3",
+            price: 16700,
+            [fouthPropertyName]: fouthPropertyValue,
+            fouthPropertyName
+        };
+        console.log(obj);
+        // obj[fouthPropertyName] = fouthPropertyValue;
+
+        const objProperty = prompt("Что про ноутбук Aser вы хотите знать?");
+        console.log(obj[objProperty]); // obj["значение, хранящееся в objProperty"]
+        // если пользователь ввел price, obj["price"]
+        // console.log(obj.brand);
+        // console.log(obj.price);
+        // console.log(obj["full name"]);
+
+        const tovar = {
+            name: "Lenovo",
+            "full name": "Lenovo 320s",
+            category: "notebook",
+            weight: 1500,
+            price: 15000
+        };
+
+        console.log(`Вы просматриваете ${tovar.category} - ${tovar["full name"]}`);
+
+        // alert(`Вы просматриваете ${tovar.category} - ${tovar.name}`); // Используй шаблонные строки, Люк!
+
+        // alert("Вы просматриваете " + tovar.category + " " + tovar.name);
+
+        // alert("Вы просматриваете " + tovar.name);
+        // alert("Вы просматриваете " + tovar.name);
+
+    </script>
+</body>
+
+</html>

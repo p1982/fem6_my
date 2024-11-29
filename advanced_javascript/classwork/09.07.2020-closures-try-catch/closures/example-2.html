@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <script>
+
+        const firstCounter = createCounter(10, 2);
+        /*
+        const obj211111 = {
+            start: 10,
+            step: 2
+        };
+
+        createCounter.LexicalEnvironment["Environment Record"] = obj211111;
+
+        const counter = function () {
+                start += step;
+                return start;
+            }
+         counter.LexicalEnvironment = {
+                "Environment Record": null, 
+                [[Environment]]: obj211111
+            }   
+
+           const firstCounter = counter;
+           
+            createCounter.LexicalEnvironment["Environment Record"] = null;
+            if(есть ли у кого-то ссылка на obj21111) {
+                да, есть у firstCounter.LexicalEnvironment[[Environment]]
+            }
+        */
+        console.log(firstCounter());
+        /*
+        if(firstCounter.LexicalEnvironment["Environment Record"].hasOwnProperty("start") && firstCounter.LexicalEnvironment["Environment Record"].hasOwnProperty("step")) {
+            firstCounter.LexicalEnvironment["Environment Record"]["start"] += firstCounter.LexicalEnvironment["Environment Record"]["step"]
+        }     
+        else if(firstCounter.LexicalEnvironment[[Environment]]["start"] && firstCounter.LexicalEnvironment[[Environment]]["step"]){
+            obj211111.start += obj211111.step;
+        }   
+        */
+        console.log(firstCounter());
+
+        // const secondCounter = createCounter(15, 5);
+        /*
+        const obj214322 = {
+            start: 15,
+            step: 5
+        }
+        createCounter.LexicalEnvironment["Environment Record"] = obj214322;
+
+        const func = function () {
+                start += step;
+                return start;
+        }
+        
+         func.LexicalEnvironment = {
+                "Environment Record": null, 
+                [[Environment]]: obj214322
+            }   
+
+           const firstCounter = func;
+           
+            createCounter.LexicalEnvironment["Environment Record"] = null;
+            if(есть ли у кого-то ссылка на obj214322) {
+                да, есть у firstCounter.LexicalEnvironment[[Environment]]
+            }
+        */
+        // console.log(secondCounter());
+        // console.log(secondCounter());
+
+        function createCounter(start, step) {
+            const counter = function() {
+                start += step;
+                return start;
+            };
+            return counter;
+        }
+
+        /*
+        createCounter.LexicalEnvironment = {
+                "Environment Record": null, 
+                [[Environment]]: window
+            }
+        */
+
+    </script>
+</body>
+
+</html>

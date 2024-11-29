@@ -1,0 +1,96 @@
+
+
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Валидация форм</title>
+        <style>
+            .error-message {
+                color: red;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <span id="email-error" class="error-message"></span>
+            <br><br>
+    
+            <label for="phone">Мобильный телефон:</label>
+            <input type="text" id="phone" name="phone">
+            <span id="phone-error" class="error-message"></span>
+            <br><br>
+    
+            <label for="passport">Паспорт:</label>
+            <input type="text" id="passport" name="passport">
+            <span id="passport-error" class="error-message"></span>
+            <br><br>
+        </form>
+        <!--
+    Создайте объект Validation, который будет иметь такие методы:
+    - проверка правильности ввода email
+    - проверка правильности ввода мобильного телефона
+    - проверка правильности ввода паспорта (первые два символа - буквы, потом - цифры)
+    
+    Сделайте так, чтобы проверка происходила в момент  нажатия клавиши.
+    Если произошла ошибка при вводе - используя объект, сгенерируйте нужное сообщение об ошибке.
+    -->
+        <script>
+            // Объект Validation
+            const Validation = {
+                // Проверка email
+                isValidEmail(email) {
+                    // Простое регулярное выражение для проверки email
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    return emailRegex.test(email);
+                },
+    
+                // Проверка мобильного телефона (пример для России: +7XXXXXXXXXX)
+                isValidPhone(phone) {
+                    // Регулярное выражение для проверки номера телефона
+                    const phoneRegex = /^\+?[7-9]\d{9,14}$/;
+                    return phoneRegex.test(phone);
+                },
+    
+                // Проверка паспорта (две буквы и затем цифры)
+                isValidPassport(passport) {
+                    // Регулярное выражение для паспорта: две буквы и минимум одна цифра
+                    const passportRegex = /^[A-Za-z]{2}\d+$/;
+                    return passportRegex.test(passport);
+                }
+            };
+    
+            // Функция для проверки ввода и отображения ошибок
+            function validateInput(inputElement, errorElement, validationMethod) {
+                inputElement.addEventListener('input', () => {
+                    const value = inputElement.value;
+                    if (!validationMethod(value)) {
+                        errorElement.textContent = 'Некорректный ввод';
+                    } else {
+                        errorElement.textContent = '';
+                    }
+                });
+            }
+    
+            // Получаем элементы
+            const emailInput = document.getElementById('email');
+            const emailError = document.getElementById('email-error');
+    
+            const phoneInput = document.getElementById('phone');
+            const phoneError = document.getElementById('phone-error');
+    
+            const passportInput = document.getElementById('passport');
+            const passportError = document.getElementById('passport-error');
+    
+            // Валидация полей при вводе
+            validateInput(emailInput, emailError, Validation.isValidEmail);
+            validateInput(phoneInput, phoneError, Validation.isValidPhone);
+            validateInput(passportInput, passportError, Validation.isValidPassport);
+        </script>
+    </body>
+    </html>
+    

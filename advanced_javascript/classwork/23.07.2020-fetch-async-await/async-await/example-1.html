@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const productUrl = "http://danit.com.ua/products/1";
+        
+        /*
+        Представьте себе ситуацию - вы чтобы получить информацию об отдельном товаре, вы отправляете AJAX-запрос по адресу "http://danit.com.ua/products/1" и в  ответ получаете с бекенда объект, описывающий товар. Это объет вида:
+        {
+            "name": "Lenovo X120S",
+            "category": 1
+        }     
+        Вам нужно вывести товар на экран. Но вы же не можете вывести вместо категории ее номер! Поэтому вы должны
+        отправить еще один AJAX-запрос - на адрес "http://danit.com.ua/categories/:categoryID", чтобы узнать название категории по номером 1. А поскольку вы не знаете номер категории, то вы должны сначала получить первый ответ (объект, описывающий товар), взять из него поле category, и с его помощью отправить второй AJAX-запрос на адрес "http://danit.com.ua/categories/${category}". То есть у вас будет AJAX-запрос внутри другого AJAX-запроса - а иначе нельзя, потому что второй запрос зависит от первого.
+        без async/await, с помощью then это выглядит так:
+        */
+       /*
+       const request = fetch(productUrl);
+        request.then(response => response.json())
+            .then(result => {
+                const {category} = result;
+                const request2 = fetch(`http://danit.com.ua/categories/${category}`);
+                request2.then(response => response.json())
+                    .then(name => {
+                        const product = {
+                            name: result.name,
+                            category: name
+                        };
+                        document.body.insertAdjacentHTML("beforeend", `<p>Название: 
+                            ${product.name}. Категория: ${product.category}`);
+                    })
+            });       
+            */ 
+        // нехилая вложенность, правда?
+
+        /*
+        async/await упрощает эту задачу. Главное помнить - ключевое слово async можно использовать ТОЛЬКО в функциях, объявленных как асинхронные (с помощью инструкции async).
+        Пример: 
+        async function getRequest(url) {
+            const response = await fetch(url);
+        }
+        Как видите, ключевое слово async пишется перед словом function, если функция объявляется с помощью 
+        Function Declaration
+        
+        const postRequest = async () => {
+        
+        }
+        В стрелочных функция ключевое слово async используется перед круглыми скобками
+        
+        await нельзя использовать вне функции, объявленной с помощью ключевого слова async. В крайнем случае вы можете создать самовызывающуюся анонимную функцию так:
+        (async () => {
+          let response = await fetch('/article/promise-chaining/user.json');
+          let user = await response.json();
+          ...
+        })();
+        
+        Инструкция await:
+        важно понимать - если перед функцией, которая возвращает Promise, написать await, в переменную слева от = 
+        будет сохранен не промис в режиме ожидания, а ответ промиса (то, что хранится в его свойстве result).
+        То есть await как бы дожидается выполнения промиса, извлекает из него результат его выполнения и возвращает его.
+        Пример: 
+        */
+        /*
+        getRequest(productUrl);
+
+        async function getRequest(url){
+            const response1 = fetch(url);
+            console.log(response1); // выведет в консоль Promise(<Pending>)
+            
+            const response2 = await fetch(url);
+            console.log(response2); // выведет в консоль: Response {type: "cors", url: "http://danit.com.ua/products/1", redirected: false, status: 200, ok: true, …}
+            const result = await response2.json();
+            console.log(result); // выведет в консоль: {"name": "Lenovo X120S", "category": 1}     
+        }     
+        */   
+        // То есть await позволяет писать код без кучи вложенных друг в друга then, как бы сихронно - дождался выполнения  одной операции - продолжил дальше
+       
+        
+        /*
+        Наш пример выше, с вложенными друг в друга AJAX-запросами, можно переписать так, используя async/await:
+        async function getRequest(url){
+            const response = await fetch(url);
+            const productInfo = await response.json(); // в переменной productInfo будет хранится объект, описывающий товар, а не промис с режиме ожидаения
+            const {category} = productInfo;
+
+           const response2 = await fetch(`http://danit.com.ua/categories/${category}`); // используя полученый из переменной productInfo номер категории, формируем новый AJAX-запрос - но не внутри предыдушего, аа после его
+           const name = await response2.json(); // в переменную name сохранится строка с названием категории
+           const product = {
+                name: productInfo.name,
+                category: name
+            };
+            return product;
+        }
+        */        
+      
+        /*
+        Важно! Функция, объявленная как async, всегда вернет Promise, чтобы вы не возвращали из нее (она любой тип данных "обернет" в промис). Так что один then все-таки писать придется. В нашем примере это выглядит так:
+        */
+        const product = getProductInfo(productUrl); // в переменную product сохранится промис, в свойство result которого записано то, что вернуло функция getRequest (в данном случае - полное описание товара)
+
+        product.then(({name, category}) => {
+            document.body.insertAdjacentHTML("beforeend", `<p>Товар: ${name}. Категория: ${category}`);
+            // выводит описание на экран
+        });
+        
+        async function getProductInfo(url){
+            const response = await fetch(url);
+            const productInfo = await response.json();
+            const {category} = productInfo;
+
+           const response2 = await fetch(`http://danit.com.ua/categories/${category}`);
+           const name = await response2.json();
+           const product = {
+                name: productInfo.name,
+                category: name
+            };
+            return product;
+        }        
+        
+ 
+    </script>
+</body>
+</html>

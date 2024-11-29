@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="people-list"></ul>
+    <script>
+        const people = ["Дэймон Сальваторе", "Клаус Майклсон", "Елена Гилберт"];
+        const peopleItems = people.map(item => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            return li;
+        });
+
+        const peopleList = document.getElementById("people-list");
+        peopleList.append(...peopleItems);
+    </script>
+</body>
+</html>

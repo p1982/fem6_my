@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Напишите код, который выводит на страницу список товаров с 
+        указанием к какой категории товар принадлежит.
+        По адресу "http://danit.com.ua/products" 
+        вы можете получить список всех товаров. 
+        В качестве ответа вы получите массив объектов. 
+        В каждом объекте в поле "category" - id конкретной категории. 
+        По адресу "http://danit.com.ua/categories" - информация о всех категориях.
+        
+        Используйте async/await.
+        */
+       
+       async function getProducts([productsUrl, categoriesUrl]) {
+            const respProd = await fetch(productsUrl);
+            const products = await respProd.json();
+            const respCat = await fetch(categoriesUrl);
+            const categories = await respCat.json();
+            
+            const arr = products.map(({name, category}) => {
+                const {name: categoryName} = categories.find(({id, name}) => id === category);
+                const product = {name, category:categoryName}
+                return product
+            });
+            return arr;
+       }
+
+       const urls = ['http://danit.com.ua/products','http://danit.com.ua/categories'];
+       const products = getProducts(urls);
+       products.then(result => {
+           const productsList = result.map(e => `<li>Название: ${e.name}. Категория: ${e.category}.</li>`).join('');
+            document.body.insertAdjacentHTML('beforeend', `<ul>${productsList}</ul>`)
+       }).catch(err => console.log(err))
+       
+
+    </script>
+</body>
+</html>

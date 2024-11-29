@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // метод filter возвращает новый массив, в который попадают те элементы старого массива, которые прошли проверку (все элементы проходят однотипную проверку). Например: только большие зарплаты, которые больше 20 000
+        const sallariesGrn = [12000, 8000, 5600, 25000, 30000];
+        const hightSallary = sallariesGrn.filter(function(item) {
+            return item > 10000;
+            /*
+            if(item > 10000) {
+                return true;
+            }
+            else {
+                return false;
+            }*/
+        });
+        /*
+        const hightSallary = [];
+        const func = function(item) {
+            return item > 10000
+        }
+        for(let i = 0; i < sallariesGrn.length) {
+            const elem = sallariesGrn[i];
+            if(func(elem)) {
+                hightSallary.push(elem);
+            }
+        }
+        delete func;
+        
+        */
+//        const hightSallary = sallariesGrn.filter(elem => elem > 10000);
+        console.log(hightSallary);
+    </script>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+

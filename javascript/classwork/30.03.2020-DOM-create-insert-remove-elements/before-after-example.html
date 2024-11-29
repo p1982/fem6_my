@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Примеры красивого оформления цитат на сайте</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Примеры красивого оформления цитат на сайте" />
+    <meta name="author" content="HTML5BOOK" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="single.css" />
+    <style>
+        body {
+            margin: 0;
+            background: url(https://html5book.ru/wp-content/uploads/2015/07/background46.png);
+        }
+
+        .top {
+            padding: 10px 0;
+            background: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            box-shadow: 1px 0 3px rgba(0, 0, 0, .3);
+        }
+
+        a {
+            text-decoration: none;
+            outline: none;
+        }
+
+        .top a {
+            font-size: 13px;
+            text-transform: uppercase;
+            font-family: Cambria, Georgia, serif;
+            letter-spacing: 1px;
+            color: #333;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 0 20px;
+            max-width: 660px;
+            margin: 40px auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Poiret One', cursive;
+            color: #524f4e;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, .7);
+            font-weight: normal;
+        }
+
+        h1 span {
+            font-weight: bold;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 0 4px 8px 0;
+            padding: 0 6px;
+            color: #aaa;
+            line-height: 20px;
+            font-size: 13px;
+            text-shadow: 1px 1px 1px white;
+            border: 1px solid white;
+            background: #ffffff;
+            background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(47%, #f6f6f6), color-stop(100%, #ededed));
+            background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+            background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+            background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+            transition: .2s ease-in-out;
+        }
+
+        .current-demo,
+        nav a:hover {
+            background: #E1E1D4;
+            border-color: #d9d9d9;
+            box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+        }
+
+        blockquote {
+            margin: 30px 0;
+            background: #F0F0F1;
+            color: #333334;
+            padding: 20px 30px;
+            position: relative;
+            border-left: 35px solid #DFDEDE;
+            font-family: 'Lato', sans-serif;
+        }
+
+        blockquote:before {
+            content: "\201C";
+            font-family: serif;
+            position: absolute;
+            left: -29px;
+            top: 5px;
+            color: #BCBCBC;
+            font-size: 50px;
+            text-shadow: 1px 2px 0 white;
+        }
+
+        blockquote p {
+            margin: 0 0 16px;
+            font-size: 20px;
+            letter-spacing: .05em;
+            line-height: 1.4;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <blockquote>
+                <p id="first-quote">I invented my life by taking for granted that everything I did not like would have an opposite, which I would like.</p>
+            </blockquote>
+                                  
+        </section>
+    </div>
+    <script>
+        
+        const firstQuote = document.getElementById("first-quote");
+
+        const newQuote = document.createElement("blockquote");
+
+        const firstQuoteP = document.createElement("p");
+
+        firstQuoteP.textContent = "На Темную сторону Силы любовь к БДСМ приводит.";
+        
+        newQuote.append(firstQuoteP);
+        
+        const firstQuoteParent = firstQuote.closest("blockquote");
+        
+        firstQuoteParent.after(newQuote);
+        
+        const secondNewQuote = document.createElement("blockquote");
+        
+        const secondQuoteP = document.createElement("p");
+        
+        secondQuoteP.textContent = "something";
+        
+        secondNewQuote.append(secondQuoteP);
+        
+        newQuote.after(secondNewQuote);
+
+        
+        
+    </script>
+
+</body>
+
+</html>
+
+
+
+

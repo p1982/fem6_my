@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="welcome"></div>
+    <script>
+        // localStorage.clear();
+    //    const userName = prompt("Введите ваше имя");
+    //    localStorage.setItem("userName", userName);
+    // localStorage.setItem("property1", "Значение property1");
+    const user = {
+        name: "User Name"
+    }
+    localStorage.setItem("user", JSON.stringify(user));
+    
+    const saveUser = localStorage.getItem("user");
+    console.log(typeof saveUser);
+    console.log(typeof JSON.parse(saveUser));
+
+        
+    </script>
+</body>
+
+</html>

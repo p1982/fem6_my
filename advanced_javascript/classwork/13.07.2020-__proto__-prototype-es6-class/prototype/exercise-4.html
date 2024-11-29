@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Напишите функцию-конструктор поле ввода (input), 
+    которая которая создает объект, описывающий однострочное поле ввода.
+  У объекта должны быть такие свойства:
+  - тип поля ввода (text, email, password и т.д.);
+  - классы поля ввода;
+  - id поля ввода;
+  - name поля ввода;
+  - placeholder поля ввода;
+  - обязательное ли поле к заполнению (по умолчанию - нет);
+  - текст ошибки если поле не заполнено (необязательное значение);
+  
+  И методы:
+  - render() - возвращает DOM-элемент input со значениями, которые храняться в свойствах объекта;
+  - Если поле обязательное  - выводить ошибку с указаным текстом если пользователь 
+  поставил в поле ввода курсор - а потом убрал, ничего не введя.
+
+  Методы нужно вынести в прототипы.
+     
+    Создайте с помощью этой функции 2 поля ввода: логина и пароля, оба обязательные, 
+    и выведите их внутри формы с id="login-form"   -->
+    <form action="" id="login-form">
+
+    </form>    
+    <script>
+      function Input(type, className, id, name, placeholder, required = false, errorText = ""){
+        const fieldTypes = ["text", "email", "password", "checkbox", "radio", "date"];
+        if(!fieldTypes.includes(type)) {
+          throw new Error("Нет такого типа input");
+        }
+        this.type = type;
+        this.className = className;
+        this.id = id;
+        this.name = name; 
+        this.placeholder = placeholder;
+        this.required = required;
+        this.errorText = errorText;
+      }
+
+      Input.prototype.render = function() {
+        const input = document.createElement("input");
+        input.type = this.type;
+        input.className = this.className;
+        input.id = this.id;
+        input.name = this.name;
+        input.placeholder = this.placeholder;
+        if(this.required) {
+          input.required = this.required;
+          input.addEventListener("focus", this.handleFocus.bind(this));
+          input.addEventListener("blur", this.handleBlur.bind(this));
+        }
+        
+        this.elem = input;
+        return input;
+      };
+
+      Input.prototype.handleFocus = function(){
+        if(this.error){
+          this.error.remove();
+        }
+      };
+
+      Input.prototype.handleBlur = function(){
+        if(!this.elem.value){
+          const error = document.createElement("p");
+          error.textContent = this.errorText;
+          error.style.color = "red";
+          this.elem.after(error);
+          this.error = error;
+        }
+      };
+
+      const loginInput = new Input("text", "form-control", "", "user-login", "Введите Логин", true, "Логин не может быть пустым!");
+      const passwordInput = new Input("password", "form-control", "", "user-password", "Введите Пароль", true, "Пароль не может быть пустым!");
+
+      const loginForm = document.getElementById("login-form");
+      loginForm.append(loginInput.render(), passwordInput.render())
+    </script>
+</body>
+</html>

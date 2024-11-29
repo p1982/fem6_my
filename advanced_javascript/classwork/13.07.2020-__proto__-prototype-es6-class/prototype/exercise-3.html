@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        .modal.active {
+            display: block;
+        }
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Создайте функцию-конструктор ModalWindow,
+         которая возвращает объект, описывающий DOM-элемент - всплывающее окно.
+    У объекта должны быть такие свойства:
+    - классы для всплывающего окна;
+    - id окна;
+    - текстовое содержимое всплывающего окна.
+    
+    И такие методы:
+    - render() - он возвращает DOM-элемент всего окна такой разметкой:
+   
+    <div id="idМодальногоОкна" class="классМодальногоОкна">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>текстовоеСодержимоеМодальногоОкна</p>
+        </div>
+    </div>    
+    - open() - открывает всплывающее окно (добавляя ему класс "active");
+    _ close() - срабатывает при клике на крестик (span с классом "close") внутри всплывающего окна (убирает у окна класс "active");
+    
+    Методы нужно вынести в прототипы.
+    
+     Окно должно открываться по клику на кнопку с id myBtn и закрываться по клику на крестик внутри окна.
+     -->
+
+    <!-- Кнопка, открывающее окно -->
+    <button id="myBtn">Open Modal</button>
+
+    <script>
+    function ModalWindow(className, id, textContent){
+        this.className = className;
+        this.id = id ;
+        this.textContent = textContent;
+    }
+
+    ModalWindow.prototype.render = function() {
+        const modal = document.createElement('div');
+        this.el = modal;
+        modal.className = this.className;
+        modal.id = this.id;
+        modal.innerHTML = `<div class="modal-content">
+            <span class="close">&times;</span>
+            <p>${this.textContent}</p>
+        </div>` ;
+        const close = modal.querySelector('.close');
+        close.addEventListener('click', this.close.bind(this))
+        return modal;
+    }
+    ModalWindow.prototype.open = function(){
+        this.el.classList.add('active');
+    };
+
+    ModalWindow.prototype.close = function(){
+        this.el.classList.remove('active');
+    };
+
+    const modal1 = new ModalWindow('modal', 'my-modal', 'Lorem )');
+    document.body.append(modal1.render());
+    
+    const btnOpenModal = document.getElementById('myBtn');
+    btnOpenModal.addEventListener('click', modal1.open.bind(modal1));
+    
+    
+
+    
+
+       
+        
+    </script>
+
+</body>
+
+</html>

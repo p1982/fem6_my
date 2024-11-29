@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .products-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+
+        .products-list-item {
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 15px;
+            position: relative;
+        }
+
+        .products-item-delete {
+            font-size: 18px;
+            color: red;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="products-list">
+            <!-- <div class="products-list-item">
+                <span class="products-item-delete">X</span>
+                <p>Названиие: </p>
+                <p>Категория: </p>
+            </div> -->
+        </div>
+    </div>
+    <script>
+        /*
+        Напишите код, который выводит на страницу список товаров с 
+        указанием к какой категории товар принадлежит.
+        По адресу "http://danit.com.ua/products" 
+        вы можете получить список всех товаров. 
+        В качестве ответа вы получите массив объектов. 
+        В каждом объекте в поле "category" - id конкретной категории. 
+        По адресу "http://danit.com.ua/categories" - информация о всех категориях.
+        
+        Используйте async/await.
+        */
+        const productsList = document.getElementById("products-list");
+
+       const urls = ['http://danit.com.ua/products','http://danit.com.ua/categories'];
+        const requests = urls.map(url => fetch(url));
+        Promise.all(requests)
+            .then(responses => {
+                const requestsResult = responses.map(response => response.json());
+                Promise.all(requestsResult)
+                    .then(results => {
+                        const [products, categories] = results;
+                        const productItems = products.map(({id, name, category}) => {
+                            const {name: categoryName} = categories.find(({id}) => id === category);
+                            return ({id, name, category: categoryName});
+                        });
+                        const productsCard = productItems.map(({id, name, category}) => {
+                            const card = document.createElement("div");
+                            card.className = "products-list-item";
+                            const cardDelete = document.createElement("span");
+                            cardDelete.className = "products-item-delete";
+                            cardDelete.addEventListener("click", ()=> {
+                                const deleteRequest = fetch(`http://danit.com.ua/products/${id}`, {
+                                    method: "DELETE"
+                                });
+                                deleteRequest
+                                    .then(res => res.json())
+                                    .then(result => {
+                                        if(result.status === "Success") {
+                                            card.remove();
+                                        }
+                                        else {
+                                            alert("Удаление не удалось")
+                                        }
+                                    })
+                            });
+                            card.insertAdjacentElement("beforeend", cardDelete);
+                            card.insertAdjacentHTML("beforeend", ` <p>Названиие: ${name}</p>
+                                                                  <p>Категория: ${category}</p>`);
+                        })
+                    })
+            });
+
+            // Пример абзаца, который можно редактировать https://codepen.io/terasol/pen/joJprr
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .main-page {
+            height: 100vh;
+            padding-bottom: 400px;
+        }
+        .border-elem {
+            border: 1px solid #000;
+        }
+        .d-block {            
+            margin: 10px;
+            display: block;
+        }
+        .d-inline-block {
+            display: inline-block;
+        }
+        .main-title {
+            width: 200px;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            width: 700px;
+        }
+        .list-item {
+            width: 300px;
+        }
+        .d-inline {
+            margin: 20px;
+            padding: 20px;
+            width: 200px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            border: 1px solid red;
+            border-radius: 5px;
+            text-decoration: none;
+            color: red;
+        }
+        .btn-primary {
+            padding: 10px 15px;
+            border: 1px solid red;
+            border-radius: 5px;
+            text-decoration: none;
+            color: red;
+        }
+        .left-col {
+            display: inline-block;
+            border: 1px solid blue;
+            margin-right: 30px;
+            width: 25%;
+            height: 300px;
+        }
+        .main-col {
+            display: inline-block;
+            border: 1px solid blue;
+            margin-right: 30px;
+            width: 30%;
+            height: 300px;
+        }
+        .right-col {
+            display: inline-block;
+            border: 1px solid blue;
+            margin-right: 30px;
+            width: 25%;
+            height: 300px;
+        }
+
+        .first-block {
+            border: 1px solid;
+            display: inline-block;
+            /*width: 100px;*/
+            padding: 30px 0;
+            /*margin: 20px 30px;*/
+        }
+
+        .second-block {
+            border: 1px solid;
+            display: inline-block;
+            width: 100px;
+            padding: 40px 0;
+            margin: 30px 30px;
+        }
+
+        .first-inline {
+            border: 1px solid;
+            padding: 20px 30px;
+            margin: 30px;
+            display: inline-block;
+        }
+
+        .second-inline {
+            border: 1px solid;
+            padding: 20px 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--Особенности блочных (display: block;) элементов (к ним относятся h, p, div, ul, ol, li, hr):-->
+<!--1. Ширина по умолчанию равная ширине родителя.-->
+<!--2. Не терпят соседей на одной линии с собой, даже если места хватает.-->
+<!--3. Для них корректно работают margin и padding.-->
+<!--Особенности строчные (display: inlne;) элементов (к ним относятся a, span, b, strong, ins, i):-->
+<!--1. Установка ширины и высоты для них не работает.-->
+<!--2. Ширина всегда равна ширине содержимого.-->
+<!--3. Нормально размещаются на одной строке если хватает места по ширине.-->
+<!--4. Некорректно работают margin-top, margin-bottom, padding-top и padding-bottom.-->
+<!--Вывод: если вам нужно чтобы строчный элемент элемент имел нормальные поля и отступы, сделайте его строчно-блочным-->
+
+
+
+
+<!--<span class="second-inline">Второй строчный</span>-->
+
+<div class="first-block">Some text</div>
+<div class="second-block">Some text 2</div>
+<a href="#" class="first-inline">Первый строчный</a>
+<!--<button type="submit" class="first-inline">Первый строчный</button>-->
+<!--<button class="first-inline">Второй строчный</button>-->
+
+<!--<div><button class="btn-primary">Eat me</button></div>-->
+<!--<div><a href="#" class="btn">Click me</a></div>-->
+
+
+<!--<div>-->
+<!--    <a href="" class="border-elem d-inline d-inline-block">Inline example</a>-->
+<!--    <span class="border-elem d-inline d-inline-block">Inline example 2</span>-->
+<!--</div>-->
+
+<!--<div>-->
+<!--    <span class="border-elem d-inline d-inline-block">Inline example 2</span>-->
+<!--</div>-->
+
+<!--<h2 class="border-elem">Title 1</h2>-->
+<!--<div class="container border-elem">-->
+<!--    <h2 class="border-elem main-title">Title 2</h2>-->
+<!--    <h2 class="border-elem main-title">Title 3</h2>-->
+<!--    <ul>-->
+<!--        <li class="border-elem list-item">Item 1</li>-->
+<!--        <li class="border-elem list-item">Item 2</li>-->
+<!--        <li class="border-elem list-item">Item 3</li>-->
+<!--        <li class="border-elem list-item">Item 4</li>-->
+<!--        <li class="border-elem list-item">Item 5</li>-->
+<!--    </ul>-->
+<!--</div>-->
+
+</body>
+</html>

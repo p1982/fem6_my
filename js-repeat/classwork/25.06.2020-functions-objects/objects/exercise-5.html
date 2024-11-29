@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .card{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+        }
+        .close{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: red;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .card__title{
+            font-size: 26px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .card__subtitle{
+            font-size: 18px;
+            
+        }
+        
+        
+    </style>    
+</head>
+<body>
+    
+    <!-- <div class="card">
+        <span class = "close"> X </span> 
+        <h3 class="card__title">Lenovo X120S</h3>
+        <h4 class="card__subtitle">X120S (233-544-2)</h4>
+        <p class="card__price">18600</p>
+    </div> -->
+    <script>
+    /*
+    напишите функцию, Которая выводит объект product в виде карточки товара на экран. 
+    HTML-разметку карточки придумайте сами
+    */
+        const product = {
+           name: "Lenovo X120S",
+           fullName: "X120S (233-544-2)",
+           price: 18600,
+           shortDescr: "",
+           fullDesr: ""
+       };
+
+
+       function createCard (card){
+          const cardObj = document.createElement('div')
+          cardObj.className = ('card')
+          cardObj.insertAdjacentHTML('beforeend', `<h3 class="card__title">${card.name}</h3>
+          <span class = "close"> X </span> 
+          <h4 class="card__subtitle">${card.fullName}</h4>
+          <p class="card__price">${card.price}</p>`)
+            const close = cardObj.querySelector('.close')
+
+            close.addEventListener('click', function(){
+                const cardContainer = this.closest(".card")
+                cardContainer.remove()
+            })          
+          
+            
+        
+            return cardObj
+       }
+       
+       const lenovoProduct = createCard(product)
+       document.body.append(lenovoProduct)
+
+      
+      
+       
+    </script>
+</body>
+</html>

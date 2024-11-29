@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        /*
+        Напишите код, который выводит на страницу список товаров.
+        Товары можно получить, отправив GET-запрос по адресу "http://danit.com.ua/products".
+        Под каждым товаром вывести название его категории.
+        Название категории можно получить, отправив GET-апрос по адрусу: "http://danit.com.ua/categories/:id"
+        где id = номер категории.
+        
+        Используйте XMLHttpRequest.
+        */
+        const productsURL = "http://danit.com.ua/products";
+        const rootElement = document.getElementById("root");
+        const req = new XMLHttpRequest();
+        req.open('GET', productsURL);
+        req.responseType = 'json';
+        req.send();
+        req.onload = function(){
+            const res = req.response;
+            const ul = document.createElement('ul');
+            rootElement.append(ul);
+            res.forEach(({name,category}) => {
+                const newReq =  new XMLHttpRequest()
+                newReq.open('GET', `http://danit.com.ua/categories/${category}`);
+                newReq.responseType = 'json';
+                newReq.send();
+                newReq.onload = function(){
+                    const categName = newReq.response;
+                    const product = `<li>name: ${name}. category: ${categName}</li>`;
+                    ul.insertAdjacentHTML('beforeend', product);
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>

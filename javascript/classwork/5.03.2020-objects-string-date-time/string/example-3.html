@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const str = `Винни-Пух и Пятак нашли банку
+    конопляного меда. После чего, хлебнув конопляный мед
+    вместе с морскими котиками, отправились
+    выбивать сведения из Кролика`;
+    str.split(" ")
+    if(str.indexOf("Кролик") !== -1) {
+        console.log("Кролик найден!");
+    }
+    if(str.includes("Кролик")) {
+        console.log("Кролик найден!");
+    }
+    str.slice(1,-5)
+</script>
+</body>
+</html>

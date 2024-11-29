@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .employee-card{
+           width: 300px;
+           text-align: center;
+           height: 300px;
+           border: 2px solid black;
+        }
+
+        .employee-list{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            grid-gap: 20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    
+    <div class="employee-list" id="employee-list">
+ 
+    </div>
+
+    <script src="axios.min.js"></script>
+        
+    <script>
+        /*
+        Отправьте GET-запрос на адрес "http://danit.com.ua/workers" 
+        и выведите на экран полученные данные в виде карточек сотрудников.
+        В качестве ответа вы должны получить массив объектов вида:
+        {
+            "name": "Emily",
+            "job": "Web Designer",
+            "phone": "+880-168-240",
+            "email": "emily@gmail.com"
+        }
+        Используйте axios
+        */
+
+        axios.get("http://danit.com.ua/workers").then(response => {
+                // console.log(response);
+                // console.log(response.data)
+            const card = response.data.map(creteUserCard).join('')
+
+            const employeeList = document.getElementById('employee-list')
+
+            employeeList.insertAdjacentHTML('beforeend',card)
+
+        });
+
+        function creteUserCard({name,job,  phone , email,}){
+            return `<div class="employee-card">
+                        <h2 class="employee-name">${name}</h2>
+                        <p class="employee-job">${job}</p>
+                        <p class="employee-phone">${phone}</p>
+                        <p class="employee-email">${email}</p>
+                    </div>`
+        }
+
+        
+       
+
+
+
+    </script>
+</body>
+</html>

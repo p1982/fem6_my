@@ -1,0 +1,32 @@
+.header, .header1{
+    font-size: 22px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: red;
+    margin: 30px;
+}
+
+.header::before {
+    content: '\2192';
+    margin-right: 10px;
+}
+
+.header::after {
+    content: '\2190';
+    margin-left: 10px;
+}
+
+.header1::before {
+    content: '\0022';
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    margin-right: 10px;
+}
+
+.header1::after {
+    content: '\0022';
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    margin-left: 10px;
+}

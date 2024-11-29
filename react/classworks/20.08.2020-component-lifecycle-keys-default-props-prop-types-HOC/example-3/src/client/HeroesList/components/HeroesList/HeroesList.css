@@ -1,0 +1,125 @@
+body {
+    font-size: 100%;
+    background: url("http://www.freebiesgallery.com/wp-content/uploads/2014/02/blurred-background-2.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Open Sans";
+}
+
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+
+ul {
+    maring: 0;
+    padding: 0px;
+
+    list-style: none;
+}
+
+ul li {
+
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 2px #888888;
+    -moz-box-shadow: 0px 0px 2px #888888;
+    box-shadow: 0px 0px 2px #888888;
+
+}
+
+.head {
+    padding: 20px;
+    color: red;
+    font-size: 36px;
+    text-align: center;
+    background-color: #ed6f70;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 2px #888888;
+    -moz-box-shadow: 0px 0px 2px #888888;
+    box-shadow: 0px 0px 2px #888888;
+}
+
+li span {
+    font-size: 16px;
+
+    color: #a0a29d;
+    margin-right: 40px;
+    height: 32px;
+    line-height: 32px;
+
+
+}
+
+.likes:before {
+    content: url("https://cdn0.iconfinder.com/data/icons/users-android-l-lollipop-icon-pack/24/group2-32.png");
+    vertical-align: -30%;
+    margin-right: 2%;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    /* For IE8 and earlier */
+}
+
+.photo:before {
+    content: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-camera-32.png");
+    vertical-align: -25%;
+    margin-right: 2%;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    /* For IE8 and earlier */
+}
+
+.comments:before {
+
+    content: url("https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/bubble-24-24.png");
+    vertical-align: -25%;
+    margin-right: 2%;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    /* For IE8 and earlier */
+}
+
+.info {
+
+    margin: 0;
+    margin-left: 5%;
+    position: relative;
+   
+
+}
+.delete {
+    position: absolute;
+    font-weight: bold;
+    font-size: 24px;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    cursor: pointer;
+}
+.social {
+
+    padding-top: 20px;
+}
+
+h3 {
+
+    color: #767a7b;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 36px;
+    font-weight: 100;
+    border-bottom: 1px solid #e0e1dd;
+}
+
+.fav {
+    float: right;
+}

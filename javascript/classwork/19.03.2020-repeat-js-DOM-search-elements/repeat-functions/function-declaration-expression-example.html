@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src="functions.js"></script> -->
+    <script>
+        /*
+        var getUAHToUSD = function (money) {
+            return money / 26.9;
+        }         
+        */
+
+        // Function expression
+        const getUAHToEUR = function (money) {
+            return money / 31;
+        } 
+
+        const productPriceUAH = +prompt("Введите цену товара в грн");
+        const  productPriceUSD = getUAHToUSD(productPriceUAH);
+        console.log(`Цена товара в долларах = ${productPriceUSD}`);
+
+        const  productPriceEUR = getUAHToEUR(productPriceUAH);
+        console.log(`Цена товара в евро = ${productPriceEUR}`);
+
+        // Function Declaration
+        function getUAHToUSD (money) {
+            return money / 26.9;
+        }   
+    </script>
+</body>
+</html>

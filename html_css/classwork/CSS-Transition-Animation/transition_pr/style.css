@@ -1,0 +1,28 @@
+.cube{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: width 0.7s, height 0.7s;
+}
+.cube:hover{
+    width: 250px;
+    height: 250px;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    position:absolute;
+    top:0;
+    transition: .4s;
+}
+.circle-container{
+    height: 200px;
+    border: 2px solid black;
+    width: 200px;
+    position: relative;
+}
+.circle-container:hover .circle{
+    top: -200px;
+}

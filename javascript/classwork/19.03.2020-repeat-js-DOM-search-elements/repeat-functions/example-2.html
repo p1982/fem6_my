@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        // window = {}
+        const sallary = +prompt("Введите вашу зарплату");
+        const currencyExchange = prompt("Введите валюту зарплаты: UAH, USD, EUR")
+        const needExchange = prompt("Введите валюту конвертации, например: UAH, USD, EUR");
+
+        const sallaryResult = convertMoney(sallary, currencyExchange, needExchange);
+        console.log(`Ваша зарплата в ${needExchange} = ${sallaryResult}`);
+
+        function convertMoney(money, currencyFrom, currencyTo){
+            let result = 0;
+            if(currencyFrom === "UAH" && currencyTo === "USD") {
+                result = money / 27;
+            }
+            else if(currencyFrom === "UAH" && currencyTo === "EUR") {
+                result = money / 31;
+            }
+            return result;
+        }
+
+    </script>
+</body>
+</html>

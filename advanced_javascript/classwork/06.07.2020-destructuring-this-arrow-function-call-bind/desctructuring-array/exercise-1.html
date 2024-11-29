@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>    
+
+    <script>
+        /*
+        Напишите код, который создаетдве переменные - name и status, 
+        сохраняя в них имя пирата (Шанкс) и статус (Ёнко)
+        Должно получиться в итоге:
+        console.log(name); // Шанкс
+        console.log(status); // Ёнко        
+        */
+
+        const person = "Рыжеволосый Шанкс; капитан Пиратов Шанкса; Ёнко"; 
+        // const arrPerson = person.split('; ');
+        // const [, name] = arrPerson[0].split(" ");
+        // console.log(name);
+        // const [status]= arrPerson[2].split(' ');
+        // console.log(status);
+
+        const arrPerson = person.split('; ');
+        console.log(arrPerson);
+        const [, name] = arrPerson[0].split(' ');
+        console.log(name);
+        const [status] = arrPerson[2].split(' ');
+        console.log(status)
+
+
+        
+    </script>
+</body>
+
+</html>

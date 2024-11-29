@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        function createUser(name, lastName) {
+            const obj = {
+                name,
+                lastName
+            };
+            return obj;
+        }
+        const user = createUser();
+        console.log(user);
+        */
+
+        const user1 = User("Драко", "Малфой"); // this будет равен Window
+        console.log(user1);
+        const user2 = new User("Драко", "Малфой"); // this будет равен пустому объекту типа User
+        console.log(user2);
+
+        function User(name, lastName) {
+            console.log(this); // посмотрим, чему равен this внутри функции при вызове ее как обычно, и через ключевое слово new
+            this.name = name;
+            this.lastName = lastName;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul><li>Товар: Lenoco X120S, Категория: 1</li></ul>
+    <script>
+        /*
+        Представьте себе ситуацию - нам нужно вывести на страницу список товаров, указав его название и категорию.
+        При этом AJAX-запрос на адрес "http://danit.com.ua/products" возвращает нам массив товаров вида:
+        [
+            {
+                "name": "Lenovo X120S",
+                "category": 1
+            },
+            {
+                "name": "Huawei N1",
+                "category": 2
+            },
+            {
+                "name": "Acer Predator X1",
+                "category": 3
+            }
+        ]  
+        Где вместо названия категории указан ее номер. Значит нам нужно отправить еще один AJAX-запрос по адресу
+        "http://danit.com.ua/categories" и получить список всех категорий вида: 
+        [
+            {
+                "id": 1,
+                "name": "Notebooks"
+            },
+            {
+                "id": 2,
+                "name": "Phones"
+            },
+            {
+                "id": 3,
+                "name": "PC"
+            }
+        ]      
+        После чего мы проходимся по массиву товаров и все номера категорий заменяем на названия, находя их во втором массиве.
+        С точки зрения JS, нам нужно отправиь парально два AJAX-запроса, и ТОЛЬКО получив результаты обоих, выводить товары на экран. Но ведь запросы асинхронные, один может прийти, а второй  еще нет - а значит для уверенности, что оба ответа прийдут, нам нужно вложить один запрос в другой. Пример:
+        
+        const productsUrl = "http://danit.com.ua/products";
+        const categoriesUrl = "http://danit.com.ua/categories";
+
+        const request1 = fetch(productsUrl);
+        request1.then(response => response.json())
+            .then(result => {
+                const request2 = fetch(categoriesUrl);
+                request2.then(response => response.json(categoriesUrl))
+                    .then(result2 => {
+                        console.log(result);
+                        console.log(result2)
+                    });
+            });
+            // Не очень читаемо
+        */
+
+        /*
+        чтобы обойти эту проблему, была придумана инструкция Promise.all, которая работает так: вы передаете ей массив промисов в режиме ожидания, после чего она ее then срабатывает ТОЛЬКО КОГДА ВСЕ ПРОМИСЫ ВЫПОЛНЯТСЯ (для всех прийдет ответ). И в переменную response сохранится так же массив ответов, а не один ответ.
+        Пример:
+        */
+        const urls = ["http://danit.com.ua/products", "http://danit.com.ua/categories"];
+        const requests = urls.map(url => fetch(url));
+        Promise.all(requests)
+        .then(responses => {
+            const results = responses.map(response => response.json());
+            Promise.all(results).then(results => {
+                console.log(results);
+            })
+        });
+
+        
+    </script>
+</body>
+</html>

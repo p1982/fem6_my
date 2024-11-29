@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script src="functions.js"></script>
+    <script>
+
+        /*
+        let userName = prompt("Введите имя");
+        // parseFloat вернет нам только цифры, если они стояли в начале строки, и isNaN, получив их, вернет false
+        // 122654myName
+        while (!isNaN(userName) || !isNaN(parseFloat(userName))) {
+            userName = prompt("Введите имя");
+        }
+        let userLastName = prompt("Введите фамилию");
+        while (!isNaN(userLastName) || !isNaN(parseFloat(userLastName))) {
+            userLastName = prompt("Введите имя");
+        }
+        */
+
+        // Создаем функцию, которая получает строку, и возвращает false, если строка не проходит проверку, и true - если проходит
+
+        function isName(str) {
+            if(!isNaN(userName) || !isNaN(parseFloat(userName))){
+                return false;
+            }
+            else {
+                return true;
+            }
+            // return (isNaN(userName) && isNaN(parseFloat(userName)));
+        }
+
+
+        let userName = prompt("Введите имя");
+        // Вызываем внутри while функцию, и в зависимости от  ответа переспрашиваем имя или нет
+        while (!isName(userName)) {
+            userName = prompt("Введите имя");
+        }
+        let userLastName = prompt("Введите фамилию");
+        while (!isName(userLastName)) {
+            userLastName = prompt("Введите имя");
+        }        
+
+    </script>
+</body>
+
+</html>

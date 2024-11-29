@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+
+<body>
+
+    <h1>Most Simple Slider with Thumbnail Navigator in jQuery</h1>
+    <div id="slider">
+        <ul>
+            <li><img src="https://xinkyo.firebird.jp/codepen/slider1.jpg"></li>
+            <li><img src="https://xinkyo.firebird.jp/codepen/slider2.jpg"></li>s
+            <li><img src="https://xinkyo.firebird.jp/codepen/slider3.jpg"></li>
+            <li><img src="https://xinkyo.firebird.jp/codepen/slider4.jpg"></li>
+        </ul>
+        <a href="#" id="sliderNext"> &gt; </a>
+        <a href="#" id="sliderPrev"> &lt; </a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            const slider = $('#slider');
+            const sliderWrap = $('#slider ul');
+            const sliderImg = $('#slider ul li');
+            const prevBtm = $('#sliderPrev');
+            const nextBtm = $('#sliderNext');
+            const length = sliderImg.length;
+            const width = sliderImg.width();
+            const thumbWidth = width / length;
+
+            sliderWrap.width(width * (length + 2));
+
+            //Set up
+            slider.after('<div id="' + 'pager' + '"></div>');
+            let dataVal = 1;
+            sliderImg.each(
+                function() {
+                    $(this).attr('data-img', dataVal);
+                    $('#pager').append('<a data-img="' + dataVal + '"><img src=' + $('img', this).attr('src') + ' width=' + thumbWidth + '></a>');
+                    dataVal++;
+                });
+
+            //Copy 2 images and put them in the front and at the end
+            $('#slider ul li:first-child').clone().appendTo('#slider ul');
+            $('#slider ul li:nth-child(' + length + ')').clone().prependTo('#slider ul');
+
+            sliderWrap.css('margin-left', -width);
+            $('#slider ul li:nth-child(2)').addClass('active');
+
+            let imgPos = pagerPos = $('#slider ul li.active').attr('data-img');
+            $('#pager a:nth-child(' + pagerPos + ')').addClass('active');
+
+
+            //Click on Pager  
+            $('#pager a').on('click', function() {
+                pagerPos = $(this).attr('data-img');
+                $('#pager a.active').removeClass('active');
+                $(this).addClass('active');
+
+                if (pagerPos > imgPos) {
+                    const movePx = width * (pagerPos - imgPos);
+                    moveNext(movePx);
+                }
+
+                if (pagerPos < imgPos) {
+                    const movePx = width * (imgPos - pagerPos);
+                    movePrev(movePx);
+                }
+                return false;
+            });
+
+            //Click on Buttons
+            nextBtm.on('click', function() {
+                moveNext(width);
+                return false;
+            });
+
+            prevBtm.on('click', function() {
+                movePrev(width);
+                return false;
+            });
+
+            //Function for pager active motion
+            function pagerActive() {
+                pagerPos = imgPos;
+                $('#pager a.active').removeClass('active');
+                $('#pager a[data-img="' + pagerPos + '"]').addClass('active');
+            }
+
+            //Function for moveNext Button
+            function moveNext(moveWidth) {
+                sliderWrap.animate({
+                    'margin-left': '-=' + moveWidth
+                }, 500, function() {
+                    if (imgPos == length) {
+                        imgPos = 1;
+                        sliderWrap.css('margin-left', -width);
+                    } else if (pagerPos > imgPos) {
+                        imgPos = pagerPos;
+                    } else {
+                        imgPos++;
+                    }
+                    pagerActive();
+                });
+            }
+
+            //Function for movePrev Button
+            function movePrev(moveWidth) {
+                sliderWrap.animate({
+                    'margin-left': '+=' + moveWidth
+                }, 500, function() {
+                    if (imgPos == 1) {
+                        imgPos = length;
+                        sliderWrap.css('margin-left', -(width * length));
+                    } else if (pagerPos < imgPos) {
+                        imgPos = pagerPos;
+                    } else {
+                        imgPos--;
+                    }
+                    pagerActive();
+                });
+            }
+
+        });
+    </script>
+</body>
+
+</html>

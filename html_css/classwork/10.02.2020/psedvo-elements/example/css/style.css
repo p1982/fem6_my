@@ -1,0 +1,43 @@
+.main-bg {
+    background-image: url("../img/main-bg.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.main-bg::before {
+    content: "";
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.main-bg::after {
+    content: "Some text";
+    color: #fff;
+}
+
+blockquote {
+    margin: 30px 0;
+    background: #F0F0F1;
+    color: #333334;
+    padding: 20px 30px;
+    position: relative;
+    border-left: 35px solid #DFDEDE;
+    font-family: 'Lato', sans-serif;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-family: serif;
+    position: absolute;
+    left: -29px;
+    top: 5px;
+    color: #BCBCBC;
+    font-size: 50px;
+    text-shadow: 1px 2px 0 white;
+}

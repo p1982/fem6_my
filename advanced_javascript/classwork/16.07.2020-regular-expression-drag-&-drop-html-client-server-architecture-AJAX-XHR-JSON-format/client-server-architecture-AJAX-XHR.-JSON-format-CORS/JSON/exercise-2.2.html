@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id='greate-houses'>
+
+    </ul>
+    <script>
+        /*
+        Отправьте AJAX-запрос на адрес "http://danit.com.ua/westeros-great-houses-json".
+        В качестве ответа вы получите массив объектов вида:
+        {
+            "name": "Ланнистеры",
+            "words": "Услышь мой рёв!",
+            "head": "Тайвин Ланнистер",
+            "heir": "Джейме Ланнистер",
+            "place": "Утес Кастерли"
+        }
+        
+        Используя полученный ответ, Выведите внутри ul с id="greate-houses" список Великих домов Вестероса с данными о них: Название, и в виде вложенного списка - глава, наследник, девиз, резиденция. Пример вывода:
+        <li>Ланнистеры:
+            <ul>
+                <li>Глава: Тайвин Ланнистер.</li>
+                <li>Наследник: Джейме Ланнистер.</li>
+                <li>Девиз: Услышь мой рёв!</li>
+                <li>Резиденция: Утес Кастерли.</li>
+            </ul>
+        </li>        
+        */
+
+        const greateHouseList = document.getElementById("greate-houses");
+        
+        sendRequest("GET", "http://danit.com.ua/westeros-great-houses-json", showGreateHouseList, greateHouseList)
+
+        function sendRequest(type, url, func, ...args) {
+
+            const req = new XMLHttpRequest();
+            req.open(type, url);
+            
+            req.responseType = "json";
+            req.send();
+            
+            req.onload = ()=> {
+                if(req.status >= 300) {
+                    throw new AJAXRequestError(req.statusText)
+                }
+                else {
+                    func(req.response, ...args)
+                }
+            }
+        }
+
+        function showGreateHouseList(arr, place) {
+            const housesItems = arr.map(house => {
+               const obj = new GreateHouse(house);
+               const elem = obj.render();
+               return elem;
+            });
+            place.append(...housesItems);
+        }
+
+        class AJAXRequestError extends Error {
+            constructor(message) {
+                super(message); 
+                this.name = "AJAXRequestError"; 
+            }
+        }
+
+        class GreateHouse {
+            constructor(props){
+                this.props = {...props};
+            }
+
+            render(){
+                const {name} = this.props;
+                const elem = document.createElement("li");
+                elem.textContent = name;
+                elem.insertAdjacentHTML("beforeend", this.getMarkup());
+                this.elem = elem;
+                return elem;
+            }
+
+            getMarkup(){
+                const {words, head, heir, place} = this.props;
+                const markup = `<ul>
+                                    <li>Глава: ${head}.</li>
+                                    <li>Наследник: ${heir}.</li>
+                                    <li>Девиз: ${words}!</li>
+                                    <li>Резиденция: ${place}.</li>
+                                </ul>`;
+                return markup;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
